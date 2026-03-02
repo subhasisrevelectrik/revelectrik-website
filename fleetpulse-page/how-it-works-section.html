@@ -1,0 +1,233 @@
+<style>
+#fp-how {
+  font-family: 'TacticSans', Arial, sans-serif;
+  background: #ebebeb;
+  color: #000000;
+  padding: 90px 20px;
+}
+#fp-how .fp-section-label {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #009dc9;
+  margin-bottom: 14px;
+}
+#fp-how h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  color: #000;
+}
+#fp-how .fp-section-sub {
+  text-align: center;
+  color: rgba(0,0,0,0.55);
+  font-size: 16px;
+  max-width: 520px;
+  margin: 0 auto 64px;
+  line-height: 1.6;
+}
+.fp-pipeline {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+.fp-step {
+  flex: 1;
+  text-align: center;
+  padding: 0 16px;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.fp-step.fp-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fp-step-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid #00d4aa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #00d4aa;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 0 6px rgba(0,212,170,0.1);
+}
+.fp-step-connector {
+  position: absolute;
+  top: 35px;
+  right: -50%;
+  width: 100%;
+  height: 2px;
+  border-top: 2.5px dashed rgba(0,212,170,0.45);
+  z-index: 0;
+}
+.fp-step:last-child .fp-step-connector { display: none; }
+.fp-step-icon {
+  margin-bottom: 14px;
+}
+.fp-step h3 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  color: #000;
+}
+.fp-step p {
+  font-size: 14px;
+  color: rgba(0,0,0,0.6);
+  line-height: 1.6;
+  margin: 0;
+}
+.fp-step-time {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #009dc9;
+  margin-bottom: 8px;
+}
+
+/* Vertical on mobile */
+@media (max-width: 768px) {
+  #fp-how { padding: 60px 20px; }
+  #fp-how h2 { font-size: 26px; }
+  .fp-pipeline {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .fp-step {
+    width: 100%;
+    max-width: 340px;
+    padding: 0 20px 40px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    text-align: left;
+  }
+  .fp-step-left { flex-shrink: 0; display: flex; flex-direction: column; align-items: center; }
+  .fp-step-circle { margin: 0 0 0; }
+  .fp-step-connector {
+    position: static;
+    width: 2px;
+    height: 40px;
+    border-top: none;
+    border-left: 2.5px dashed rgba(0,212,170,0.45);
+    margin: 8px auto 0;
+    display: block;
+  }
+  .fp-step:last-child .fp-step-connector { display: none; }
+  .fp-step-body { flex: 1; padding-top: 12px; }
+}
+</style>
+
+<section id="fp-how">
+  <div class="fp-section-label">How It Works</div>
+  <h2>From CAN Bus to Dashboard in 4 Steps</h2>
+  <p class="fp-section-sub">No proprietary hardware. No vendor lock-in. Full data ownership from day one.</p>
+
+  <div class="fp-pipeline">
+
+    <div class="fp-step fp-animate">
+      <div class="fp-step-left">
+        <div class="fp-step-circle">1</div>
+        <div class="fp-step-connector"></div>
+      </div>
+      <div class="fp-step-body">
+        <div class="fp-step-time">Step 01</div>
+        <h3>Install</h3>
+        <p>Raspberry Pi edge unit connects via OBD-II port or direct CAN tap. Under 1 hour, no vehicle downtime.</p>
+      </div>
+    </div>
+
+    <div class="fp-step fp-animate">
+      <div class="fp-step-left">
+        <div class="fp-step-circle">2</div>
+        <div class="fp-step-connector"></div>
+      </div>
+      <div class="fp-step-body">
+        <div class="fp-step-time">Step 02</div>
+        <h3>Capture</h3>
+        <p>CAN frames decoded via DBC files, batched to Apache Parquet, buffered offline with automatic retry.</p>
+      </div>
+    </div>
+
+    <div class="fp-step fp-animate">
+      <div class="fp-step-left">
+        <div class="fp-step-circle">3</div>
+        <div class="fp-step-connector"></div>
+      </div>
+      <div class="fp-step-body">
+        <div class="fp-step-time">Step 03</div>
+        <h3>Stream</h3>
+        <p>Compressed Parquet uploads to your AWS S3 bucket. Lambda auto-decodes on arrival, no manual pipeline.</p>
+      </div>
+    </div>
+
+    <div class="fp-step fp-animate">
+      <div class="fp-step-left">
+        <div class="fp-step-circle">4</div>
+        <div class="fp-step-connector"></div>
+      </div>
+      <div class="fp-step-body">
+        <div class="fp-step-time">Step 04</div>
+        <h3>Visualize</h3>
+        <p>React dashboard. Any vehicle, any signal, any time range. Zoom, pan, and export with one click.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function() {
+  // On mobile, wrap content
+  function adjustMobileLayout() {
+    if (window.innerWidth <= 768) {
+      document.querySelectorAll('#fp-how .fp-step').forEach(function(step) {
+        if (step.querySelector('.fp-step-left')) return;
+        var circle = step.querySelector('.fp-step-circle');
+        var conn = step.querySelector('.fp-step-connector');
+        var left = document.createElement('div');
+        left.className = 'fp-step-left';
+        if (circle) left.appendChild(circle);
+        if (conn) left.appendChild(conn);
+        var body = document.createElement('div');
+        body.className = 'fp-step-body';
+        Array.from(step.children).forEach(function(c) { body.appendChild(c); });
+        step.appendChild(left);
+        step.appendChild(body);
+      });
+    }
+  }
+
+  var steps = document.querySelectorAll('#fp-how .fp-animate');
+  if (!steps.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry, i) {
+      if (entry.isIntersecting) {
+        setTimeout(function() {
+          entry.target.classList.add('fp-visible');
+        }, i * 150);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  steps.forEach(function(s) { observer.observe(s); });
+})();
+</script>

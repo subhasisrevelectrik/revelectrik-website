@@ -1,0 +1,237 @@
+<style>
+#fp-pricing {
+  font-family: 'TacticSans', Arial, sans-serif;
+  background: #111;
+  color: #ffffff;
+  padding: 90px 20px;
+}
+#fp-pricing .fp-section-label {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #00d4aa;
+  margin-bottom: 14px;
+}
+#fp-pricing h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  color: #ffffff;
+}
+#fp-pricing .fp-section-sub {
+  text-align: center;
+  color: rgba(255,255,255,0.55);
+  font-size: 16px;
+  max-width: 520px;
+  margin: 0 auto 56px;
+  line-height: 1.6;
+}
+.fp-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+.fp-plan-card {
+  background: #111827;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 36px 30px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(20px);
+  position: relative;
+}
+.fp-plan-card.fp-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fp-plan-card.fp-popular {
+  border-color: #00d4aa;
+  box-shadow: 0 0 0 1px #00d4aa, 0 16px 48px rgba(0,212,170,0.15);
+}
+.fp-popular-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #00d4aa;
+  color: #0a0f1a;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 5px 16px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+.fp-plan-name {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+.fp-plan-tagline {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+.fp-plan-price {
+  font-size: 28px;
+  font-weight: 700;
+  color: #00d4aa;
+  margin-bottom: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.fp-plan-price span {
+  font-size: 14px;
+  color: rgba(255,255,255,0.45);
+  font-weight: 400;
+}
+.fp-plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+  flex: 1;
+}
+.fp-plan-features li {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  padding: 9px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.fp-plan-features li::before {
+  content: '✓';
+  color: #00d4aa;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.fp-plan-features li.fp-dimmed { color: rgba(255,255,255,0.35); }
+.fp-plan-features li.fp-dimmed::before { color: rgba(255,255,255,0.2); content: '—'; }
+.fp-plan-cta {
+  display: block;
+  text-align: center;
+  background: transparent;
+  color: #00d4aa;
+  font-family: 'TacticSans', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 13px 28px;
+  border-radius: 7px;
+  border: 1.5px solid #00d4aa;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.fp-plan-cta:hover { background: #00d4aa; color: #0a0f1a; }
+.fp-popular .fp-plan-cta {
+  background: #00d4aa;
+  color: #0a0f1a;
+}
+.fp-popular .fp-plan-cta:hover { background: #00eaff; }
+@media (max-width: 1024px) { .fp-pricing-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 768px) {
+  #fp-pricing { padding: 60px 20px; }
+  #fp-pricing h2 { font-size: 26px; }
+  .fp-pricing-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<section id="fp-pricing">
+  <div class="fp-section-label">Pricing</div>
+  <h2>Transparent, Ownership-First Pricing</h2>
+  <p class="fp-section-sub">No per-vehicle-per-month surprises. Deploy in your AWS account — costs scale with your cloud bill, not ours.</p>
+
+  <div class="fp-pricing-grid">
+
+    <!-- Pilot -->
+    <div class="fp-plan-card fp-animate">
+      <div class="fp-plan-name">Pilot</div>
+      <div class="fp-plan-tagline">Prove the value. Zero long-term commitment.</div>
+      <div class="fp-plan-price">Contact Us <span>/ custom</span></div>
+      <ul class="fp-plan-features">
+        <li>Up to 10 vehicles</li>
+        <li>90-day data retention</li>
+        <li>3 dashboard users</li>
+        <li>1 DBC file</li>
+        <li>Email support</li>
+        <li>AWS CDK deployment guide</li>
+        <li class="fp-dimmed">Priority support</li>
+        <li class="fp-dimmed">AI chatbot diagnostics</li>
+        <li class="fp-dimmed">On-prem option</li>
+      </ul>
+      <a href="#fp-cta" class="fp-plan-cta">Contact Us</a>
+    </div>
+
+    <!-- Growth (Most Popular) -->
+    <div class="fp-plan-card fp-popular fp-animate">
+      <div class="fp-popular-badge">Most Popular</div>
+      <div class="fp-plan-name">Growth</div>
+      <div class="fp-plan-tagline">Scale your intelligence across your full fleet.</div>
+      <div class="fp-plan-price">Contact Us <span>/ custom</span></div>
+      <ul class="fp-plan-features">
+        <li>Up to 100 vehicles</li>
+        <li>1-year data retention</li>
+        <li>15 dashboard users</li>
+        <li>5 DBC files</li>
+        <li>Priority support (SLA)</li>
+        <li>AWS CDK deployment + onboarding</li>
+        <li>AI chatbot diagnostics (beta)</li>
+        <li class="fp-dimmed">On-prem option</li>
+        <li class="fp-dimmed">Dedicated account manager</li>
+      </ul>
+      <a href="#fp-cta" class="fp-plan-cta">Contact Us</a>
+    </div>
+
+    <!-- Enterprise -->
+    <div class="fp-plan-card fp-animate">
+      <div class="fp-plan-name">Enterprise</div>
+      <div class="fp-plan-tagline">Unlimited scale. On-prem option. White-glove support.</div>
+      <div class="fp-plan-price">Contact Us <span>/ custom</span></div>
+      <ul class="fp-plan-features">
+        <li>Unlimited vehicles</li>
+        <li>Custom data retention</li>
+        <li>Unlimited users</li>
+        <li>Unlimited DBC files</li>
+        <li>Dedicated support + SLA</li>
+        <li>On-premises deployment option</li>
+        <li>Custom integrations (API)</li>
+        <li>Dedicated account manager</li>
+        <li>AI diagnostics + compliance reports</li>
+      </ul>
+      <a href="#fp-cta" class="fp-plan-cta">Contact Us</a>
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function() {
+  var cards = document.querySelectorAll('#fp-pricing .fp-animate');
+  if (!cards.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry, i) {
+      if (entry.isIntersecting) {
+        setTimeout(function() { entry.target.classList.add('fp-visible'); }, i * 120);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  cards.forEach(function(c) { observer.observe(c); });
+})();
+</script>

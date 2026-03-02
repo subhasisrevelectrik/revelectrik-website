@@ -1,0 +1,176 @@
+<style>
+#fp-hero {
+  font-family: 'TacticSans', Arial, sans-serif;
+  background: linear-gradient(135deg, #0a0f1a 0%, #000d16 55%, #001a22 100%);
+  color: #ffffff;
+  padding: 100px 20px 90px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+#fp-hero::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(0,212,170,0.08) 0%, transparent 65%);
+  pointer-events: none;
+}
+#fp-hero .fp-hero-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+#fp-hero .fp-eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #00d4aa;
+  border: 1px solid rgba(0,212,170,0.4);
+  border-radius: 20px;
+  padding: 5px 18px;
+  margin-bottom: 28px;
+}
+#fp-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 22px;
+  color: #ffffff;
+}
+#fp-hero h1 span {
+  color: #00eaff;
+}
+#fp-hero .fp-sub {
+  font-size: 18px;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.78);
+  max-width: 680px;
+  margin: 0 auto 44px;
+}
+.fp-hero-btns {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.fp-btn-primary {
+  display: inline-block;
+  background: #00d4aa;
+  color: #0a0f1a;
+  font-family: 'TacticSans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 15px 36px;
+  border-radius: 7px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.2s, transform 0.2s;
+}
+.fp-btn-primary:hover {
+  background: #00eaff;
+  transform: translateY(-2px);
+}
+.fp-btn-primary::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 10px;
+  border: 2px solid rgba(0,212,170,0.5);
+  animation: fp-pulse 2s ease-in-out infinite;
+}
+@keyframes fp-pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 0; transform: scale(1.08); }
+}
+.fp-btn-ghost {
+  display: inline-block;
+  background: transparent;
+  color: #ffffff;
+  font-family: 'TacticSans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 14px 34px;
+  border-radius: 7px;
+  border: 1.5px solid rgba(255,255,255,0.35);
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s, transform 0.2s;
+}
+.fp-btn-ghost:hover {
+  border-color: #00eaff;
+  color: #00eaff;
+  transform: translateY(-2px);
+}
+.fp-hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 64px;
+  flex-wrap: wrap;
+}
+.fp-stat {
+  text-align: center;
+}
+.fp-stat-num {
+  font-size: 32px;
+  font-weight: 700;
+  color: #00d4aa;
+  line-height: 1;
+}
+.fp-stat-label {
+  font-size: 13px;
+  color: rgba(255,255,255,0.55);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 6px;
+}
+@media (max-width: 768px) {
+  #fp-hero { padding: 70px 20px 60px; }
+  #fp-hero h1 { font-size: 30px; }
+  #fp-hero .fp-sub { font-size: 16px; }
+  .fp-hero-stats { gap: 28px; }
+  .fp-stat-num { font-size: 26px; }
+}
+</style>
+
+<section id="fp-hero">
+  <div class="fp-hero-inner">
+    <div class="fp-eyebrow">FleetPulse — CAN Bus Telemetry Platform</div>
+    <h1>Real-Time <span>CAN Bus Telemetry</span><br>for Commercial EV Fleets</h1>
+    <p class="fp-sub">From vehicle to cloud dashboard in under an hour. Monitor battery health, motor performance, and drivetrain diagnostics across your entire fleet.</p>
+    <div class="fp-hero-btns">
+      <a href="#fp-cta" class="fp-btn-primary">Book a Demo</a>
+      <a href="https://github.com/subhasisrevelectrik/telemetry-platform" target="_blank" rel="noopener" class="fp-btn-ghost">View on GitHub →</a>
+    </div>
+    <div class="fp-hero-stats">
+      <div class="fp-stat">
+        <div class="fp-stat-num">&lt;1 hr</div>
+        <div class="fp-stat-label">Installation time</div>
+      </div>
+      <div class="fp-stat">
+        <div class="fp-stat-num">100K+</div>
+        <div class="fp-stat-label">Data points per vehicle/day</div>
+      </div>
+      <div class="fp-stat">
+        <div class="fp-stat-num">40%</div>
+        <div class="fp-stat-label">Downtime reduction</div>
+      </div>
+      <div class="fp-stat">
+        <div class="fp-stat-num">1-cmd</div>
+        <div class="fp-stat-label">Cloud deploy (AWS CDK)</div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,133 @@
+<style>
+#fp-arch {
+  font-family: 'TacticSans', Arial, sans-serif;
+  background: #0a0f1a;
+  color: #ffffff;
+  padding: 90px 20px;
+}
+#fp-arch .fp-section-label {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #00d4aa;
+  margin-bottom: 14px;
+}
+#fp-arch h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  color: #ffffff;
+}
+#fp-arch .fp-section-sub {
+  text-align: center;
+  color: rgba(255,255,255,0.55);
+  font-size: 16px;
+  max-width: 560px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+.fp-arch-wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+  background: #0f172a;
+  border-radius: 12px;
+  border: 1px solid rgba(0,212,170,0.15);
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+.fp-arch-wrapper svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.fp-arch-pills {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 36px;
+}
+.fp-arch-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.75);
+}
+.fp-arch-pill-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  #fp-arch { padding: 60px 20px; }
+  #fp-arch h2 { font-size: 26px; }
+  .fp-arch-pills { gap: 10px; }
+  .fp-arch-pill { font-size: 12px; padding: 6px 14px; }
+}
+</style>
+
+<section id="fp-arch">
+  <div class="fp-section-label">Architecture</div>
+  <h2>Production-Grade Architecture</h2>
+  <p class="fp-section-sub">Serverless. Scales from 5 vehicles to 5,000. Deploys in one command with AWS CDK.</p>
+
+  <div class="fp-arch-wrapper">
+    <!-- INLINE SVG — architecture-diagram.svg content embedded here -->
+    <svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+      <rect width="1200" height="600" fill="#0f172a"/>
+      <rect x="20" y="20" width="260" height="560" rx="12" fill="none" stroke="rgba(59,130,246,0.25)" stroke-width="1.5" stroke-dasharray="6 3"/>
+      <text x="150" y="50" text-anchor="middle" fill="rgba(59,130,246,0.7)" font-size="12" letter-spacing="2" font-weight="600">VEHICLE EDGE</text>
+      <rect x="310" y="20" width="750" height="560" rx="12" fill="none" stroke="rgba(245,158,11,0.25)" stroke-width="1.5" stroke-dasharray="6 3"/>
+      <text x="685" y="50" text-anchor="middle" fill="rgba(245,158,11,0.7)" font-size="12" letter-spacing="2" font-weight="600">AWS CLOUD</text>
+      <rect x="1090" y="20" width="90" height="560" rx="12" fill="none" stroke="rgba(0,212,170,0.25)" stroke-width="1.5" stroke-dasharray="6 3"/>
+      <text x="1135" y="50" text-anchor="middle" fill="rgba(0,212,170,0.7)" font-size="12" letter-spacing="2" font-weight="600">UI</text>
+      <g transform="translate(30, 120)"><rect width="110" height="60" rx="8" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2"/><text x="55" y="22" text-anchor="middle" fill="#93c5fd" font-size="10" font-weight="600">CAN BUS</text><text x="55" y="38" text-anchor="middle" fill="rgba(147,197,253,0.7)" font-size="9">2.0A/2.0B</text><text x="55" y="52" text-anchor="middle" fill="rgba(147,197,253,0.7)" font-size="9">J1939 / UDS</text></g>
+      <g transform="translate(30, 260)"><rect width="240" height="80" rx="8" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2"/><text x="120" y="22" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="700">EDGE AGENT</text><text x="120" y="38" text-anchor="middle" fill="rgba(147,197,253,0.75)" font-size="9">Raspberry Pi 4/5 + CAN HAT</text><text x="120" y="52" text-anchor="middle" fill="rgba(147,197,253,0.65)" font-size="9">python-can · cantools · pyarrow</text><text x="120" y="66" text-anchor="middle" fill="rgba(147,197,253,0.65)" font-size="9">Parquet (zstd) · Offline Buffer</text></g>
+      <line x1="85" y1="180" x2="85" y2="258" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr-blue2)"/>
+      <line x1="272" y1="300" x2="330" y2="300" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr-blue2)"/>
+      <g transform="translate(330, 270)"><rect width="130" height="60" rx="8" fill="#2d1e00" stroke="#f59e0b" stroke-width="2"/><text x="65" y="22" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="700">S3 — RAW</text><text x="65" y="38" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">Hive-partitioned</text><text x="65" y="52" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">year/month/day/vehicle</text></g>
+      <line x1="460" y1="300" x2="510" y2="300" stroke="#f59e0b" stroke-width="2" marker-end="url(#arr-amber2)"/>
+      <g transform="translate(510, 270)"><rect width="130" height="60" rx="8" fill="#2d1e00" stroke="#f59e0b" stroke-width="2"/><text x="65" y="22" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="700">LAMBDA</text><text x="65" y="38" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">DBC Decoder</text><text x="65" y="52" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">S3 trigger · serverless</text></g>
+      <line x1="640" y1="300" x2="690" y2="300" stroke="#f59e0b" stroke-width="2" marker-end="url(#arr-amber2)"/>
+      <g transform="translate(690, 270)"><rect width="130" height="60" rx="8" fill="#2d1e00" stroke="#f59e0b" stroke-width="2"/><text x="65" y="22" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="700">S3 — DECODED</text><text x="65" y="38" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">Parquet (clean)</text><text x="65" y="52" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">human-readable signals</text></g>
+      <line x1="755" y1="270" x2="755" y2="200" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arr-amber-sm2)"/>
+      <g transform="translate(690, 140)"><rect width="130" height="55" rx="8" fill="#2d1e00" stroke="rgba(245,158,11,0.6)" stroke-width="1.5"/><text x="65" y="22" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="700">AWS GLUE</text><text x="65" y="38" text-anchor="middle" fill="rgba(252,211,77,0.65)" font-size="9">Data Catalog</text><text x="65" y="51" text-anchor="middle" fill="rgba(252,211,77,0.65)" font-size="9">Schema registry</text></g>
+      <line x1="690" y1="167" x2="640" y2="167" stroke="rgba(245,158,11,0.5)" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arr-amber-sm2)"/>
+      <g transform="translate(510, 140)"><rect width="130" height="55" rx="8" fill="#2d1e00" stroke="#f59e0b" stroke-width="2"/><text x="65" y="22" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="700">AMAZON ATHENA</text><text x="65" y="38" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">SQL query engine</text><text x="65" y="51" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">serverless · pay-per-query</text></g>
+      <line x1="510" y1="167" x2="460" y2="167" stroke="#f59e0b" stroke-width="2" marker-end="url(#arr-amber2)"/>
+      <g transform="translate(330, 140)"><rect width="130" height="55" rx="8" fill="#2d1e00" stroke="#f59e0b" stroke-width="2"/><text x="65" y="20" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="700">API GATEWAY</text><text x="65" y="34" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">FastAPI + Lambda</text><text x="65" y="48" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">LTTB downsampling</text></g>
+      <line x1="460" y1="167" x2="1090" y2="280" stroke="rgba(0,212,170,0.6)" stroke-width="2" marker-end="url(#arr-teal2)"/>
+      <g transform="translate(330, 430)"><rect width="130" height="50" rx="8" fill="#162020" stroke="rgba(0,212,170,0.4)" stroke-width="1.5"/><text x="65" y="20" text-anchor="middle" fill="#6ee7d4" font-size="10" font-weight="600">AWS COGNITO</text><text x="65" y="34" text-anchor="middle" fill="rgba(110,231,212,0.65)" font-size="9">JWT Auth · User Pools</text><text x="65" y="47" text-anchor="middle" fill="rgba(110,231,212,0.65)" font-size="9">dashboard access control</text></g>
+      <line x1="460" y1="455" x2="1090" y2="380" stroke="rgba(0,212,170,0.35)" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#arr-teal-sm2)"/>
+      <g transform="translate(1095, 255)"><rect width="75" height="90" rx="8" fill="#0d2620" stroke="#00d4aa" stroke-width="2"/><text x="37" y="20" text-anchor="middle" fill="#00d4aa" font-size="9" font-weight="700">REACT</text><text x="37" y="32" text-anchor="middle" fill="#00d4aa" font-size="9" font-weight="700">DASHBOARD</text><text x="37" y="48" text-anchor="middle" fill="rgba(0,212,170,0.65)" font-size="8">TS 5.8</text><text x="37" y="60" text-anchor="middle" fill="rgba(0,212,170,0.65)" font-size="8">Plotly.js</text><text x="37" y="72" text-anchor="middle" fill="rgba(0,212,170,0.65)" font-size="8">AWS CDK</text><text x="37" y="84" text-anchor="middle" fill="rgba(0,212,170,0.65)" font-size="8">deploy</text></g>
+      <text x="600" y="520" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-size="16" font-weight="700" letter-spacing="1">FleetPulse — Production Architecture</text>
+      <text x="600" y="542" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="11">CAN Bus → Edge → AWS Serverless → React Dashboard</text>
+      <rect x="350" y="475" width="12" height="12" rx="2" fill="#3b82f6"/><text x="368" y="486" fill="rgba(255,255,255,0.65)" font-size="11">Vehicle Edge</text>
+      <rect x="460" y="475" width="12" height="12" rx="2" fill="#f59e0b"/><text x="478" y="486" fill="rgba(255,255,255,0.65)" font-size="11">AWS Cloud</text>
+      <rect x="560" y="475" width="12" height="12" rx="2" fill="#00d4aa"/><text x="578" y="486" fill="rgba(255,255,255,0.65)" font-size="11">Frontend</text>
+      <defs>
+        <marker id="arr-blue2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/></marker>
+        <marker id="arr-amber2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#f59e0b"/></marker>
+        <marker id="arr-amber-sm2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="rgba(245,158,11,0.6)"/></marker>
+        <marker id="arr-teal2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="rgba(0,212,170,0.8)"/></marker>
+        <marker id="arr-teal-sm2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="rgba(0,212,170,0.5)"/></marker>
+      </defs>
+    </svg>
+  </div>
+
+  <div class="fp-arch-pills">
+    <div class="fp-arch-pill"><div class="fp-arch-pill-dot" style="background:#3b82f6"></div>Raspberry Pi 4/5 Edge</div>
+    <div class="fp-arch-pill"><div class="fp-arch-pill-dot" style="background:#f59e0b"></div>AWS Serverless (S3 + Lambda + Athena)</div>
+    <div class="fp-arch-pill"><div class="fp-arch-pill-dot" style="background:#00d4aa"></div>React 19 Dashboard</div>
+    <div class="fp-arch-pill"><div class="fp-arch-pill-dot" style="background:#a855f7"></div>1-Command CDK Deploy</div>
+  </div>
+</section>

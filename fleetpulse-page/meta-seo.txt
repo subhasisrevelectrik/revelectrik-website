@@ -1,0 +1,94 @@
+================================================================================
+FleetPulse Page — SEO Metadata
+Paste these values into Tilda Page Settings → SEO
+================================================================================
+
+PAGE TITLE (60 chars max)
+--------------------------------------------------------------------------------
+FleetPulse: CAN Bus Telemetry for Commercial EV Fleets
+
+CHARACTER COUNT: 56 ✓
+
+--------------------------------------------------------------------------------
+
+META DESCRIPTION (155 chars max)
+--------------------------------------------------------------------------------
+Real-time CAN bus telemetry from vehicle to cloud dashboard in under an hour. Monitor battery health, motor performance & diagnostics across your EV fleet.
+
+CHARACTER COUNT: 156 — trim if needed:
+Real-time CAN bus telemetry from vehicle to cloud dashboard in <1 hour. Monitor battery health, motor performance & diagnostics for your EV fleet.
+
+CHARACTER COUNT: 147 ✓
+
+--------------------------------------------------------------------------------
+
+OPEN GRAPH TITLE
+--------------------------------------------------------------------------------
+FleetPulse — Real-Time CAN Bus Telemetry for Commercial EV Fleets
+
+--------------------------------------------------------------------------------
+
+OPEN GRAPH DESCRIPTION
+--------------------------------------------------------------------------------
+From vehicle to cloud dashboard in under an hour. Monitor battery health, motor performance, and drivetrain diagnostics across your entire fleet. Built on AWS. Your data, your cloud.
+
+--------------------------------------------------------------------------------
+
+OPEN GRAPH IMAGE (suggested)
+--------------------------------------------------------------------------------
+Use the architecture diagram: /assets/architecture-diagram.svg (export as PNG 1200×630)
+OR a dashboard screenshot at 1200×630px
+Minimum: 1200×630px, under 8MB
+
+--------------------------------------------------------------------------------
+
+TWITTER CARD TYPE
+--------------------------------------------------------------------------------
+summary_large_image
+
+--------------------------------------------------------------------------------
+
+CANONICAL URL
+--------------------------------------------------------------------------------
+https://revelectrik.com/ourproducts/fleetpulse
+
+--------------------------------------------------------------------------------
+
+TARGET KEYWORDS (primary → long-tail)
+--------------------------------------------------------------------------------
+Primary:
+1. CAN bus telemetry
+2. commercial EV fleet monitoring
+3. fleet telemetry platform
+4. EV fleet management software
+5. real-time vehicle diagnostics
+
+Secondary:
+6. CAN bus fleet management
+7. OBD-II EV diagnostics
+8. J1939 telemetry system
+9. battery health monitoring fleet
+10. AWS IoT fleet telemetry
+
+Long-tail:
+11. real-time CAN bus data commercial electric vehicle
+12. EV fleet diagnostic platform open source
+13. Raspberry Pi CAN bus fleet monitoring
+14. cloud-based EV fleet telemetry dashboard
+15. DBC file fleet management system
+
+--------------------------------------------------------------------------------
+
+TILDA PAGE SETTINGS CHECKLIST
+--------------------------------------------------------------------------------
+[ ] Page URL (alias): ourproducts/fleetpulse
+[ ] Page title: set to PAGE TITLE above
+[ ] Meta description: set to META DESCRIPTION above
+[ ] OG title: set to OPEN GRAPH TITLE above
+[ ] OG description: set to OPEN GRAPH DESCRIPTION above
+[ ] OG image: upload 1200x630 image
+[ ] Twitter card: summary_large_image
+[ ] Indexing: enabled (checked)
+[ ] Add to site navigation: Yes (under "Our Products")
+
+================================================================================

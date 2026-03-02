@@ -1,0 +1,125 @@
+<style>
+#fp-cta {
+  font-family: 'TacticSans', Arial, sans-serif;
+  background: #0a0f1a;
+  color: #ffffff;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+#fp-cta::before {
+  content: '';
+  position: absolute;
+  bottom: -60%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 900px;
+  background: radial-gradient(circle, rgba(0,157,201,0.12) 0%, transparent 60%);
+  pointer-events: none;
+}
+#fp-cta::after {
+  content: '';
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(0,212,170,0.07) 0%, transparent 60%);
+  pointer-events: none;
+}
+.fp-cta-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.fp-cta-eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #00d4aa;
+  border: 1px solid rgba(0,212,170,0.3);
+  border-radius: 20px;
+  padding: 5px 18px;
+  margin-bottom: 28px;
+}
+#fp-cta h2 {
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 18px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+#fp-cta h2 span { color: #00eaff; }
+#fp-cta p {
+  font-size: 17px;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.65;
+  margin: 0 0 44px;
+}
+.fp-cta-btns {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.fp-cta-btn-primary {
+  display: inline-block;
+  background: #009dc9;
+  color: #ffffff;
+  font-family: 'TacticSans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 16px 42px;
+  border-radius: 7px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+.fp-cta-btn-primary:hover { background: #00eaff; color: #000; transform: translateY(-2px); }
+.fp-cta-btn-secondary {
+  display: inline-block;
+  background: transparent;
+  color: #ffffff;
+  font-family: 'TacticSans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 15px 40px;
+  border-radius: 7px;
+  border: 1.5px solid rgba(255,255,255,0.3);
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s, transform 0.2s;
+}
+.fp-cta-btn-secondary:hover { border-color: #00eaff; color: #00eaff; transform: translateY(-2px); }
+.fp-cta-note {
+  margin-top: 28px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.35);
+}
+@media (max-width: 768px) {
+  #fp-cta { padding: 70px 20px; }
+  #fp-cta h2 { font-size: 28px; }
+  #fp-cta p { font-size: 15px; }
+}
+</style>
+
+<section id="fp-cta">
+  <div class="fp-cta-inner">
+    <div class="fp-cta-eyebrow">Get Started</div>
+    <h2>Ready to See <span>FleetPulse</span> in Action?</h2>
+    <p>Book a 30-minute demo. We'll show you live data from a real vehicle — battery state of charge, motor thermals, drivetrain signals — streamed from CAN bus to dashboard.</p>
+    <div class="fp-cta-btns">
+      <a href="https://revelectrik.com/#contactus" class="fp-cta-btn-primary">Book a Demo</a>
+      <a href="https://github.com/subhasisrevelectrik/telemetry-platform" target="_blank" rel="noopener" class="fp-cta-btn-secondary">View Source on GitHub →</a>
+    </div>
+    <div class="fp-cta-note">No commitment. We'll bring the vehicle data.</div>
+  </div>
+</section>

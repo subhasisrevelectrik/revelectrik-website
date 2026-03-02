@@ -1,0 +1,201 @@
+<style>
+#fp-products-landing {
+  font-family: 'TacticSans', Arial, sans-serif;
+  background: #000;
+  color: #ffffff;
+  padding: 90px 20px;
+}
+#fp-products-landing .fp-section-label {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #009dc9;
+  margin-bottom: 14px;
+}
+#fp-products-landing h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+#fp-products-landing .fp-section-sub {
+  text-align: center;
+  color: rgba(255,255,255,0.55);
+  font-size: 16px;
+  max-width: 540px;
+  margin: 0 auto 56px;
+  line-height: 1.6;
+}
+.fp-products-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+.fp-product-card {
+  background: #111827;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.fp-product-card.fp-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease, border-color 0.25s, box-shadow 0.25s;
+}
+.fp-product-card:hover {
+  border-color: #00d4aa;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0,212,170,0.1);
+}
+/* Image placeholder */
+.fp-product-img {
+  height: 220px;
+  background: linear-gradient(135deg, #0a1628 0%, #0d2030 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  position: relative;
+  overflow: hidden;
+}
+.fp-product-img-label {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  background: rgba(0,0,0,0.5);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+.fp-product-body {
+  padding: 28px 30px 32px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.fp-product-tag {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #009dc9;
+  margin-bottom: 12px;
+}
+.fp-product-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 14px;
+  line-height: 1.3;
+}
+.fp-product-card p {
+  font-size: 14px;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.65;
+  margin: 0 0 24px;
+  flex: 1;
+}
+.fp-product-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #00d4aa;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: gap 0.2s, color 0.2s;
+}
+.fp-product-link:hover { gap: 12px; color: #00eaff; }
+@media (max-width: 768px) {
+  #fp-products-landing { padding: 60px 20px; }
+  #fp-products-landing h2 { font-size: 26px; }
+  .fp-products-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<section id="fp-products-landing">
+  <div class="fp-section-label">Our Products</div>
+  <h2>Two Pillars of the EV Revolution</h2>
+  <p class="fp-section-sub">Clean energy generation and real-time fleet intelligence — purpose-built for the commercial electric vehicle ecosystem.</p>
+
+  <div class="fp-products-grid">
+
+    <!-- Product 1: Solar Charging -->
+    <div class="fp-product-card fp-animate">
+      <div class="fp-product-img">
+        <!-- INSERT: Real product image of solar charging system -->
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+          <rect width="80" height="80" rx="12" fill="rgba(0,157,201,0.08)"/>
+          <rect x="15" y="25" width="50" height="35" rx="4" stroke="#009dc9" stroke-width="2"/>
+          <path d="M25 25V18M55 25V18M35 25V20M45 25V20" stroke="#009dc9" stroke-width="2" stroke-linecap="round"/>
+          <line x1="15" y1="38" x2="65" y2="38" stroke="#009dc9" stroke-width="1.5"/>
+          <line x1="35" y1="25" x2="35" y2="60" stroke="#009dc9" stroke-width="1.5"/>
+          <line x1="50" y1="25" x2="50" y2="60" stroke="#009dc9" stroke-width="1.5"/>
+          <path d="M40 65 L40 60" stroke="#009dc9" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="40" cy="68" r="3" stroke="#009dc9" stroke-width="2"/>
+        </svg>
+        <div class="fp-product-img-label">Insert product image</div>
+      </div>
+      <div class="fp-product-body">
+        <div class="fp-product-tag">Energy Product</div>
+        <h3>Solar Energy Collection &amp; Charging System</h3>
+        <p>2kWh solar-to-HV battery charging for commercial EVs. Capture renewable energy during downtime and reduce grid dependency — without modifying the vehicle's drivetrain.</p>
+        <a href="/ourproducts#solar" class="fp-product-link">Learn More →</a>
+      </div>
+    </div>
+
+    <!-- Product 2: FleetPulse -->
+    <div class="fp-product-card fp-animate">
+      <div class="fp-product-img">
+        <!-- INSERT: FleetPulse dashboard screenshot or product mockup -->
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+          <rect width="80" height="80" rx="12" fill="rgba(0,212,170,0.08)"/>
+          <rect x="12" y="22" width="56" height="36" rx="4" stroke="#00d4aa" stroke-width="2"/>
+          <path d="M20 46 L28 36 L36 40 L44 28 L52 34 L60 30" stroke="#00d4aa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="44" cy="28" r="3" fill="#00d4aa"/>
+          <rect x="25" y="62" width="30" height="4" rx="2" fill="#00d4aa" opacity="0.3"/>
+          <rect x="35" y="58" width="10" height="4" rx="2" fill="#00d4aa" opacity="0.2"/>
+        </svg>
+        <div class="fp-product-img-label">Insert dashboard screenshot</div>
+      </div>
+      <div class="fp-product-body">
+        <div class="fp-product-tag">Data Product</div>
+        <h3>FleetPulse CAN Bus Telemetry Platform</h3>
+        <p>Real-time vehicle intelligence from CAN bus to cloud dashboard. Monitor battery health, motor performance, and drivetrain diagnostics across your entire commercial EV fleet.</p>
+        <a href="/ourproducts/fleetpulse" class="fp-product-link">Explore FleetPulse →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function() {
+  var cards = document.querySelectorAll('#fp-products-landing .fp-animate');
+  if (!cards.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry, i) {
+      if (entry.isIntersecting) {
+        setTimeout(function() { entry.target.classList.add('fp-visible'); }, i * 150);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  cards.forEach(function(c) { observer.observe(c); });
+})();
+</script>

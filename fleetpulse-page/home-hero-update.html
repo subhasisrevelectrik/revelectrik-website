@@ -1,0 +1,161 @@
+<style>
+#fp-home-pillars {
+  font-family: 'TacticSans', Arial, sans-serif;
+  background: #111;
+  color: #ffffff;
+  padding: 80px 20px;
+}
+#fp-home-pillars .fp-section-label {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #00d4aa;
+  margin-bottom: 14px;
+}
+#fp-home-pillars h2 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+#fp-home-pillars .fp-section-sub {
+  text-align: center;
+  color: rgba(255,255,255,0.55);
+  font-size: 16px;
+  max-width: 560px;
+  margin: 0 auto 56px;
+  line-height: 1.65;
+}
+.fp-pillars-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.fp-pillar {
+  background: #0a0f1a;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  padding: 36px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: border-color 0.25s, transform 0.25s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.fp-pillar.fp-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease, border-color 0.25s;
+}
+.fp-pillar:first-child:hover { border-color: #009dc9; }
+.fp-pillar:last-child:hover { border-color: #00d4aa; }
+.fp-pillar-num {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  margin-bottom: 20px;
+}
+.fp-pillar-icon {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 20px;
+}
+.fp-pillar h3 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 14px;
+  line-height: 1.3;
+}
+.fp-pillar p {
+  font-size: 14px;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.65;
+  margin: 0 0 24px;
+  flex: 1;
+}
+.fp-pillar-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: gap 0.2s;
+}
+.fp-pillar:first-child .fp-pillar-link { color: #009dc9; }
+.fp-pillar:last-child .fp-pillar-link { color: #00d4aa; }
+.fp-pillar-link:hover { gap: 12px; }
+@media (max-width: 768px) {
+  #fp-home-pillars { padding: 60px 20px; }
+  #fp-home-pillars h2 { font-size: 26px; }
+  .fp-pillars-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<section id="fp-home-pillars">
+  <div class="fp-section-label">What We Build</div>
+  <h2>Two Pillars of Commercial EV Innovation</h2>
+  <p class="fp-section-sub">From harvesting solar energy on the go, to streaming real-time diagnostics from every CAN signal — Revelectrik powers the full EV intelligence stack.</p>
+
+  <div class="fp-pillars-grid">
+
+    <!-- Pillar 1: Solar Charging -->
+    <div class="fp-pillar fp-animate">
+      <div class="fp-pillar-num">01 / Energy</div>
+      <!-- Solar icon -->
+      <svg class="fp-pillar-icon" viewBox="0 0 56 56" fill="none">
+        <rect width="56" height="56" rx="10" fill="rgba(0,157,201,0.1)"/>
+        <circle cx="28" cy="28" r="9" stroke="#009dc9" stroke-width="2"/>
+        <path d="M28 13V10M28 46V43M13 28H10M46 28H43M18.1 18.1L16 16M40 40L37.9 37.9M37.9 18.1L40 16M16 40L18.1 37.9" stroke="#009dc9" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <h3>Solar Energy Collection &amp; Charging</h3>
+      <p>2kWh solar-to-HV battery charging for commercial EVs. Harness renewable energy during parking and downtime — zero drivetrain modification required.</p>
+      <a href="/ourproducts#solar" class="fp-pillar-link">View Product →</a>
+    </div>
+
+    <!-- Pillar 2: FleetPulse -->
+    <div class="fp-pillar fp-animate">
+      <div class="fp-pillar-num">02 / Intelligence</div>
+      <!-- Dashboard icon -->
+      <svg class="fp-pillar-icon" viewBox="0 0 56 56" fill="none">
+        <rect width="56" height="56" rx="10" fill="rgba(0,212,170,0.1)"/>
+        <rect x="10" y="17" width="36" height="24" rx="3" stroke="#00d4aa" stroke-width="2"/>
+        <path d="M16 33 L21 26 L26 29 L31 20 L36 24 L40 21" stroke="#00d4aa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="31" cy="20" r="2.5" fill="#00d4aa"/>
+        <line x1="22" y1="41" x2="34" y2="41" stroke="#00d4aa" stroke-width="2" stroke-linecap="round"/>
+        <line x1="28" y1="41" x2="28" y2="44" stroke="#00d4aa" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <h3>FleetPulse CAN Bus Telemetry</h3>
+      <p>Real-time vehicle intelligence from CAN bus to cloud dashboard. Monitor battery health, motor performance, and diagnostics across your entire fleet — from a single screen.</p>
+      <a href="/ourproducts/fleetpulse" class="fp-pillar-link">Explore FleetPulse →</a>
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function() {
+  var pillars = document.querySelectorAll('#fp-home-pillars .fp-animate');
+  if (!pillars.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry, i) {
+      if (entry.isIntersecting) {
+        setTimeout(function() { entry.target.classList.add('fp-visible'); }, i * 150);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  pillars.forEach(function(p) { observer.observe(p); });
+})();
+</script>

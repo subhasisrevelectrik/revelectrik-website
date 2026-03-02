@@ -1,0 +1,165 @@
+<style>
+#fp-problems {
+  font-family: 'TacticSans', Arial, sans-serif;
+  background: #000;
+  color: #ffffff;
+  padding: 90px 20px;
+}
+#fp-problems .fp-section-label {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #e5194a;
+  margin-bottom: 16px;
+}
+#fp-problems h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  color: #ffffff;
+}
+#fp-problems .fp-section-sub {
+  text-align: center;
+  color: rgba(255,255,255,0.6);
+  font-size: 16px;
+  max-width: 560px;
+  margin: 0 auto 56px;
+  line-height: 1.6;
+}
+.fp-problem-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.fp-problem-card {
+  background: #111827;
+  border: 1px solid rgba(229,25,74,0.15);
+  border-radius: 10px;
+  padding: 36px 32px;
+  transition: border-color 0.25s, transform 0.25s;
+  opacity: 0;
+  transform: translateY(24px);
+}
+.fp-problem-card.fp-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease, border-color 0.25s, box-shadow 0.25s;
+}
+.fp-problem-card:hover {
+  border-color: #e5194a;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(229,25,74,0.12);
+}
+.fp-problem-icon {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 22px;
+}
+.fp-problem-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 14px;
+  line-height: 1.3;
+}
+.fp-problem-card p {
+  font-size: 15px;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.65;
+  margin: 0;
+}
+.fp-problem-card .fp-problem-tag {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #e5194a;
+  margin-bottom: 10px;
+}
+@media (max-width: 1024px) {
+  .fp-problem-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  #fp-problems { padding: 60px 20px; }
+  #fp-problems h2 { font-size: 26px; }
+  .fp-problem-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<section id="fp-problems">
+  <div class="fp-section-label">The Problem</div>
+  <h2>Why Fleet Managers Are Flying Blind</h2>
+  <p class="fp-section-sub">Legacy telematics weren't built for electric drivetrains. CAN bus data stays trapped on the vehicle — until it's too late.</p>
+
+  <div class="fp-problem-grid">
+
+    <div class="fp-problem-card fp-animate">
+      <!-- Icon: eye with slash -->
+      <svg class="fp-problem-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="52" height="52" rx="10" fill="rgba(229,25,74,0.1)"/>
+        <path d="M10 26C10 26 17 16 26 16C35 16 42 26 42 26C42 26 35 36 26 36C17 36 10 26 10 26Z" stroke="#e5194a" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="26" cy="26" r="5" stroke="#e5194a" stroke-width="2"/>
+        <line x1="12" y1="14" x2="40" y2="38" stroke="#e5194a" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <div class="fp-problem-tag">Problem 01</div>
+      <h3>Blind Spots Kill Uptime</h3>
+      <p>Fleet managers discover failures after vehicles are stranded. Without real-time CAN-level visibility, maintenance is always reactive and expensive.</p>
+    </div>
+
+    <div class="fp-problem-card fp-animate">
+      <!-- Icon: plug/connector -->
+      <svg class="fp-problem-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="52" height="52" rx="10" fill="rgba(229,25,74,0.1)"/>
+        <rect x="20" y="12" width="12" height="10" rx="2" stroke="#e5194a" stroke-width="2"/>
+        <line x1="26" y1="22" x2="26" y2="28" stroke="#e5194a" stroke-width="2"/>
+        <path d="M18 28H34C34 34 30.418 38 26 38C21.582 38 18 34 18 28Z" stroke="#e5194a" stroke-width="2" stroke-linejoin="round"/>
+        <line x1="22" y1="15" x2="22" y2="20" stroke="#e5194a" stroke-width="1.5"/>
+        <line x1="30" y1="15" x2="30" y2="20" stroke="#e5194a" stroke-width="1.5"/>
+        <line x1="14" y1="26" x2="17" y2="26" stroke="#e5194a" stroke-width="2" stroke-linecap="round"/>
+        <line x1="35" y1="26" x2="38" y2="26" stroke="#e5194a" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <div class="fp-problem-tag">Problem 02</div>
+      <h3>OBD-II Isn't Enough</h3>
+      <p>Generic scanners read a fraction of available CAN signals. Proprietary BMS data, motor controller thermals, and coolant diagnostics stay invisible.</p>
+    </div>
+
+    <div class="fp-problem-card fp-animate">
+      <!-- Icon: lock/chain -->
+      <svg class="fp-problem-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="52" height="52" rx="10" fill="rgba(229,25,74,0.1)"/>
+        <rect x="16" y="26" width="20" height="14" rx="3" stroke="#e5194a" stroke-width="2"/>
+        <path d="M20 26V20C20 16.686 22.686 14 26 14C29.314 14 32 16.686 32 20V26" stroke="#e5194a" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="26" cy="32" r="2" fill="#e5194a"/>
+        <line x1="26" y1="34" x2="26" y2="37" stroke="#e5194a" stroke-width="1.5"/>
+      </svg>
+      <div class="fp-problem-tag">Problem 03</div>
+      <h3>Vendor Lock-In Traps</h3>
+      <p>Telematics providers own your fleet data, charge per vehicle per month, and make switching painful. Your operational intelligence shouldn't be held hostage.</p>
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function() {
+  var cards = document.querySelectorAll('#fp-problems .fp-animate');
+  if (!cards.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry, i) {
+      if (entry.isIntersecting) {
+        setTimeout(function() {
+          entry.target.classList.add('fp-visible');
+        }, i * 120);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  cards.forEach(function(c) { observer.observe(c); });
+})();
+</script>

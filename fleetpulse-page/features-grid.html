@@ -1,0 +1,228 @@
+<style>
+#fp-features {
+  font-family: 'TacticSans', Arial, sans-serif;
+  background: #111;
+  color: #ffffff;
+  padding: 90px 20px;
+}
+#fp-features .fp-section-label {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #00d4aa;
+  margin-bottom: 14px;
+}
+#fp-features h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  color: #ffffff;
+}
+#fp-features .fp-section-sub {
+  text-align: center;
+  color: rgba(255,255,255,0.55);
+  font-size: 16px;
+  max-width: 540px;
+  margin: 0 auto 56px;
+  line-height: 1.6;
+}
+.fp-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.fp-feature-card {
+  background: #111827;
+  border: 1px solid rgba(0,157,201,0.12);
+  border-radius: 10px;
+  padding: 30px 28px;
+  transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.fp-feature-card.fp-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.45s ease, transform 0.45s ease, border-color 0.25s, box-shadow 0.25s;
+}
+.fp-feature-card:hover {
+  border-color: #00d4aa;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 36px rgba(0,212,170,0.1);
+}
+.fp-feature-card.fp-soon { opacity: 0.7; }
+.fp-feature-card.fp-soon:hover { transform: none; box-shadow: none; }
+.fp-badge-soon {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #f59e0b;
+  border: 1px solid rgba(245,158,11,0.4);
+  border-radius: 20px;
+  padding: 3px 10px;
+  margin-bottom: 14px;
+}
+.fp-feature-icon {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 18px;
+}
+.fp-feature-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 10px;
+  letter-spacing: 0.5px;
+}
+.fp-feature-card p {
+  font-size: 14px;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.6;
+  margin: 0;
+}
+@media (max-width: 1024px) { .fp-features-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 768px) {
+  #fp-features { padding: 60px 20px; }
+  #fp-features h2 { font-size: 26px; }
+  .fp-features-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<section id="fp-features">
+  <div class="fp-section-label">Capabilities</div>
+  <h2>Everything Your Fleet Intelligence Needs</h2>
+  <p class="fp-section-sub">Built for real CAN bus complexity, not watered-down OBD-II readings.</p>
+
+  <div class="fp-features-grid">
+
+    <!-- Row 1 -->
+    <div class="fp-feature-card fp-animate">
+      <svg class="fp-feature-icon" viewBox="0 0 44 44" fill="none">
+        <rect width="44" height="44" rx="8" fill="rgba(0,157,201,0.1)"/>
+        <path d="M10 22H34M22 10L10 22L22 34" stroke="#009dc9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="34" cy="22" r="4" stroke="#00d4aa" stroke-width="2"/>
+      </svg>
+      <h3>DBC-Driven Decoding</h3>
+      <p>Supports J1939, UDS, and OEM proprietary DBC files. Decode any signal your vehicle exposes on the CAN bus.</p>
+    </div>
+
+    <div class="fp-feature-card fp-animate">
+      <svg class="fp-feature-icon" viewBox="0 0 44 44" fill="none">
+        <rect width="44" height="44" rx="8" fill="rgba(0,212,170,0.1)"/>
+        <rect x="8" y="14" width="28" height="18" rx="3" stroke="#00d4aa" stroke-width="2"/>
+        <path d="M14 26 L18 20 L22 24 L26 17 L30 22" stroke="#00d4aa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h3>Interactive Dashboard</h3>
+      <p>Plotly.js-powered time-series charts. Zoom, pan, and export any signal. Multi-vehicle comparison in one view.</p>
+    </div>
+
+    <div class="fp-feature-card fp-animate">
+      <svg class="fp-feature-icon" viewBox="0 0 44 44" fill="none">
+        <rect width="44" height="44" rx="8" fill="rgba(0,157,201,0.1)"/>
+        <path d="M22 8V36M8 22H36" stroke="rgba(0,157,201,0.3)" stroke-width="1"/>
+        <rect x="14" y="14" width="16" height="16" rx="3" stroke="#009dc9" stroke-width="2"/>
+        <path d="M18 22 L22 18 L26 22" stroke="#009dc9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M22 18V30" stroke="#009dc9" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      <h3>Edge Buffering</h3>
+      <p>Local Parquet storage survives connectivity gaps. Automatic retry queues ensure zero data loss, even offline.</p>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="fp-feature-card fp-animate">
+      <svg class="fp-feature-icon" viewBox="0 0 44 44" fill="none">
+        <rect width="44" height="44" rx="8" fill="rgba(0,212,170,0.1)"/>
+        <path d="M22 10C15.373 10 10 15.373 10 22C10 28.627 15.373 34 22 34C28.627 34 34 28.627 34 22" stroke="#00d4aa" stroke-width="2" stroke-linecap="round"/>
+        <path d="M28 10L34 16L28 22" stroke="#00d4aa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M34 10L34 22" stroke="#00d4aa" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <h3>Your Data, Your Cloud</h3>
+      <p>Deploys into your own AWS account. S3, Lambda, Athena — you own the infrastructure and every byte of data.</p>
+    </div>
+
+    <div class="fp-feature-card fp-animate">
+      <svg class="fp-feature-icon" viewBox="0 0 44 44" fill="none">
+        <rect width="44" height="44" rx="8" fill="rgba(0,157,201,0.1)"/>
+        <polyline points="8,32 14,24 20,28 26,16 32,20 38,12" stroke="#009dc9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="38" cy="12" r="3" fill="#009dc9"/>
+      </svg>
+      <h3>LTTB Downsampling</h3>
+      <p>Largest-Triangle-Three-Buckets algorithm renders 100K+ data points smoothly. Perceptually lossless visualization.</p>
+    </div>
+
+    <div class="fp-feature-card fp-animate">
+      <svg class="fp-feature-icon" viewBox="0 0 44 44" fill="none">
+        <rect width="44" height="44" rx="8" fill="rgba(0,212,170,0.1)"/>
+        <rect x="10" y="10" width="10" height="10" rx="2" stroke="#00d4aa" stroke-width="2"/>
+        <rect x="24" y="10" width="10" height="10" rx="2" stroke="#00d4aa" stroke-width="2"/>
+        <rect x="10" y="24" width="10" height="10" rx="2" stroke="#00d4aa" stroke-width="2"/>
+        <rect x="24" y="24" width="10" height="10" rx="2" stroke="rgba(0,212,170,0.4)" stroke-width="2" stroke-dasharray="3 2"/>
+      </svg>
+      <h3>Infrastructure as Code</h3>
+      <p>AWS CDK stack. One command deploys the entire platform: S3, Lambda, Athena, API Gateway, Cognito.</p>
+    </div>
+
+    <!-- Row 3 — Coming Soon -->
+    <div class="fp-feature-card fp-soon fp-animate">
+      <div class="fp-badge-soon">Coming Soon</div>
+      <svg class="fp-feature-icon" viewBox="0 0 44 44" fill="none">
+        <rect width="44" height="44" rx="8" fill="rgba(245,158,11,0.08)"/>
+        <path d="M22 10L25 18H34L27 23L30 31L22 26L14 31L17 23L10 18H19L22 10Z" stroke="#f59e0b" stroke-width="2" stroke-linejoin="round"/>
+      </svg>
+      <h3>Threshold Alerts</h3>
+      <p>Set signal thresholds. Get notified instantly when battery temp, SoC, or motor current exceeds limits.</p>
+    </div>
+
+    <div class="fp-feature-card fp-soon fp-animate">
+      <div class="fp-badge-soon">Coming Soon</div>
+      <svg class="fp-feature-icon" viewBox="0 0 44 44" fill="none">
+        <rect width="44" height="44" rx="8" fill="rgba(245,158,11,0.08)"/>
+        <circle cx="22" cy="20" r="8" stroke="#f59e0b" stroke-width="2"/>
+        <path d="M16 34C16 31 18.686 29 22 29C25.314 29 28 31 28 34" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+        <path d="M30 16 L35 11 M30 24 L35 29" stroke="rgba(245,158,11,0.5)" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <h3>AI Diagnostics</h3>
+      <p>LLM-powered fault analysis. Describe symptoms in plain English, get CAN-signal-backed root cause reports.</p>
+    </div>
+
+    <div class="fp-feature-card fp-soon fp-animate">
+      <div class="fp-badge-soon">Coming Soon</div>
+      <svg class="fp-feature-icon" viewBox="0 0 44 44" fill="none">
+        <rect width="44" height="44" rx="8" fill="rgba(245,158,11,0.08)"/>
+        <rect x="10" y="10" width="24" height="30" rx="3" stroke="#f59e0b" stroke-width="2"/>
+        <line x1="15" y1="18" x2="29" y2="18" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="15" y1="23" x2="29" y2="23" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="15" y1="28" x2="23" y2="28" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <h3>Compliance Reports</h3>
+      <p>FTA-ready exports, audit trails, and automated PDF reports for fleet certification and lease agreements.</p>
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function() {
+  var cards = document.querySelectorAll('#fp-features .fp-animate');
+  if (!cards.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry, i) {
+      if (entry.isIntersecting) {
+        setTimeout(function() {
+          entry.target.classList.add('fp-visible');
+        }, i * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  cards.forEach(function(c) { observer.observe(c); });
+})();
+</script>

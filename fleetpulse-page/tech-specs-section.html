@@ -1,0 +1,235 @@
+<style>
+#fp-specs {
+  font-family: 'TacticSans', Arial, sans-serif;
+  background: #ebebeb;
+  color: #000000;
+  padding: 90px 20px;
+}
+#fp-specs .fp-section-label {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #009dc9;
+  margin-bottom: 14px;
+}
+#fp-specs h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  color: #000;
+}
+#fp-specs .fp-section-sub {
+  text-align: center;
+  color: rgba(0,0,0,0.5);
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+.fp-specs-table {
+  max-width: 860px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+.fp-spec-row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  opacity: 0;
+  transform: translateX(-12px);
+}
+.fp-spec-row.fp-visible {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.fp-spec-row:last-child { border-bottom: none; }
+.fp-spec-row:nth-child(even) .fp-spec-label,
+.fp-spec-row:nth-child(even) .fp-spec-value {
+  background: rgba(0,157,201,0.04);
+}
+.fp-spec-label {
+  background: #ffffff;
+  padding: 16px 24px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  border-right: 1px solid rgba(0,0,0,0.07);
+}
+.fp-spec-value {
+  background: #ffffff;
+  padding: 16px 24px;
+  font-size: 14px;
+  font-family: 'Courier New', 'Consolas', monospace;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.fp-spec-tag {
+  display: inline-block;
+  background: rgba(0,157,201,0.1);
+  color: #009dc9;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-family: 'Courier New', monospace;
+  white-space: nowrap;
+}
+.fp-spec-tag-green {
+  background: rgba(0,212,170,0.1);
+  color: #00796b;
+}
+@media (max-width: 768px) {
+  #fp-specs { padding: 60px 20px; }
+  #fp-specs h2 { font-size: 26px; }
+  .fp-spec-row { grid-template-columns: 1fr; }
+  .fp-spec-label {
+    border-right: none;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    padding: 12px 20px 8px;
+    font-size: 12px;
+  }
+  .fp-spec-value { padding: 8px 20px 14px; }
+}
+</style>
+
+<section id="fp-specs">
+  <div class="fp-section-label">Technical Specifications</div>
+  <h2>Built on Battle-Tested Open Standards</h2>
+  <p class="fp-section-sub">No proprietary lock-in. Every component is replaceable, auditable, and yours.</p>
+
+  <div class="fp-specs-table">
+
+    <div class="fp-spec-row fp-animate">
+      <div class="fp-spec-label">Edge Hardware</div>
+      <div class="fp-spec-value">
+        <span class="fp-spec-tag">Raspberry Pi 4/5</span>
+        <span class="fp-spec-tag">CAN HAT (MCP2515)</span>
+        <span class="fp-spec-tag">OBD-II adapter</span>
+      </div>
+    </div>
+
+    <div class="fp-spec-row fp-animate">
+      <div class="fp-spec-label">Edge Software</div>
+      <div class="fp-spec-value">
+        <span class="fp-spec-tag">Python 3.12+</span>
+        <span class="fp-spec-tag">python-can</span>
+        <span class="fp-spec-tag">cantools</span>
+        <span class="fp-spec-tag">pyarrow</span>
+      </div>
+    </div>
+
+    <div class="fp-spec-row fp-animate">
+      <div class="fp-spec-label">Data Format</div>
+      <div class="fp-spec-value">
+        <span class="fp-spec-tag fp-spec-tag-green">Apache Parquet</span>
+        <span class="fp-spec-tag">zstd compression</span>
+        <span class="fp-spec-tag">Hive partitioning</span>
+      </div>
+    </div>
+
+    <div class="fp-spec-row fp-animate">
+      <div class="fp-spec-label">Cloud Storage</div>
+      <div class="fp-spec-value">
+        <span class="fp-spec-tag">AWS S3</span>
+        <span class="fp-spec-tag">year/month/day/vehicle</span>
+        <span class="fp-spec-tag">versioning enabled</span>
+      </div>
+    </div>
+
+    <div class="fp-spec-row fp-animate">
+      <div class="fp-spec-label">Processing</div>
+      <div class="fp-spec-value">
+        <span class="fp-spec-tag">AWS Lambda</span>
+        <span class="fp-spec-tag">S3 event trigger</span>
+        <span class="fp-spec-tag">serverless · auto-scale</span>
+      </div>
+    </div>
+
+    <div class="fp-spec-row fp-animate">
+      <div class="fp-spec-label">Query Engine</div>
+      <div class="fp-spec-value">
+        <span class="fp-spec-tag fp-spec-tag-green">Amazon Athena</span>
+        <span class="fp-spec-tag">standard SQL</span>
+        <span class="fp-spec-tag">pay-per-query</span>
+      </div>
+    </div>
+
+    <div class="fp-spec-row fp-animate">
+      <div class="fp-spec-label">API Layer</div>
+      <div class="fp-spec-value">
+        <span class="fp-spec-tag">FastAPI</span>
+        <span class="fp-spec-tag">API Gateway</span>
+        <span class="fp-spec-tag">LTTB downsampling</span>
+      </div>
+    </div>
+
+    <div class="fp-spec-row fp-animate">
+      <div class="fp-spec-label">Frontend</div>
+      <div class="fp-spec-value">
+        <span class="fp-spec-tag fp-spec-tag-green">React 19</span>
+        <span class="fp-spec-tag">TypeScript 5.8</span>
+        <span class="fp-spec-tag">Plotly.js</span>
+      </div>
+    </div>
+
+    <div class="fp-spec-row fp-animate">
+      <div class="fp-spec-label">Authentication</div>
+      <div class="fp-spec-value">
+        <span class="fp-spec-tag">AWS Cognito</span>
+        <span class="fp-spec-tag">JWT tokens</span>
+        <span class="fp-spec-tag">User Pools</span>
+      </div>
+    </div>
+
+    <div class="fp-spec-row fp-animate">
+      <div class="fp-spec-label">Infrastructure</div>
+      <div class="fp-spec-value">
+        <span class="fp-spec-tag fp-spec-tag-green">AWS CDK</span>
+        <span class="fp-spec-tag">1-command deploy</span>
+        <span class="fp-spec-tag">your AWS account</span>
+      </div>
+    </div>
+
+    <div class="fp-spec-row fp-animate">
+      <div class="fp-spec-label">CAN Protocols</div>
+      <div class="fp-spec-value">
+        <span class="fp-spec-tag">CAN 2.0A / 2.0B</span>
+        <span class="fp-spec-tag">J1939</span>
+        <span class="fp-spec-tag">UDS (ISO 14229)</span>
+        <span class="fp-spec-tag">DBC files</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function() {
+  var rows = document.querySelectorAll('#fp-specs .fp-animate');
+  if (!rows.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry, i) {
+      if (entry.isIntersecting) {
+        setTimeout(function() {
+          entry.target.classList.add('fp-visible');
+        }, i * 60);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.05 });
+  rows.forEach(function(r) { observer.observe(r); });
+})();
+</script>
