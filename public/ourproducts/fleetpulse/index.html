@@ -1,0 +1,1935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta charset="utf-8" /> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--metatextblock--> <title>FleetPulse: CAN Bus Telemetry for Commercial EV Fleets | Revelectrik</title> <meta name="description" content="Real-time CAN bus telemetry from vehicle to cloud in under an hour. Monitor battery health, motor performance &amp; diagnostics across your EV fleet." /> <meta property="og:url" content="https://revelectrik.com/ourproducts/fleetpulse" /> <meta property="og:title" content="FleetPulse — Real-Time CAN Bus Telemetry for Commercial EV Fleets" /> <meta property="og:description" content="" /> <meta property="og:type" content="website" /> <meta property="og:image" content="/images/tild6434-3736-4039-a435-346162616362__new_jpg.jpg" /> <link rel="canonical" href="https://revelectrik.com/ourproducts/fleetpulse"> <!--/metatextblock--> <meta name="format-detection" content="telephone=no" /> <meta http-equiv="x-dns-prefetch-control" content="on"> <link rel="dns-prefetch" href="https://ws.tildacdn.com"> <link rel="dns-prefetch" href="https://static.tildacdn.com"> <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> <!-- Assets --> <script src="https://neo.tildacdn.com/js/tilda-fallback-1.0.min.js" async charset="utf-8"></script> <link rel="stylesheet" href="/css/tilda-grid-3.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';"/> <link rel="stylesheet" href="/css/tilda-blocks-page46042209.min.css?t=1764786434" type="text/css" media="all" onerror="this.loaderr='y';" /> <link rel="stylesheet" href="/css/tilda-forms-1.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';" /> <link rel="stylesheet" href="/css/tilda-cover-1.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';" /> <script nomodule src="/js/tilda-polyfill-1.0.min.js" charset="utf-8"></script> <script type="text/javascript">function t_onReady(func) {if(document.readyState!='loading') {func();} else {document.addEventListener('DOMContentLoaded',func);}}
+function t_onFuncLoad(funcName,okFunc,time) {if(typeof window[funcName]==='function') {okFunc();} else {setTimeout(function() {t_onFuncLoad(funcName,okFunc,time);},(time||100));}}function t_throttle(fn,threshhold,scope) {return function() {fn.apply(scope||this,arguments);};}function t396_initialScale(t){var e=document.getElementById("rec"+t);if(e){var i=e.querySelector(".t396__artboard");if(i){window.tn_scale_initial_window_width||(window.tn_scale_initial_window_width=document.documentElement.clientWidth);var a=window.tn_scale_initial_window_width,r=[],n,l=i.getAttribute("data-artboard-screens");if(l){l=l.split(",");for(var o=0;o<l.length;o++)r[o]=parseInt(l[o],10)}else r=[320,480,640,960,1200];for(var o=0;o<r.length;o++){var d=r[o];a>=d&&(n=d)}var _="edit"===window.allrecords.getAttribute("data-tilda-mode"),c="center"===t396_getFieldValue(i,"valign",n,r),s="grid"===t396_getFieldValue(i,"upscale",n,r),w=t396_getFieldValue(i,"height_vh",n,r),g=t396_getFieldValue(i,"height",n,r),u=!!window.opr&&!!window.opr.addons||!!window.opera||-1!==navigator.userAgent.indexOf(" OPR/");if(!_&&c&&!s&&!w&&g&&!u){var h=parseFloat((a/n).toFixed(3)),f=[i,i.querySelector(".t396__carrier"),i.querySelector(".t396__filter")],v=Math.floor(parseInt(g,10)*h)+"px",p;i.style.setProperty("--initial-scale-height",v);for(var o=0;o<f.length;o++)f[o].style.setProperty("height","var(--initial-scale-height)");t396_scaleInitial__getElementsToScale(i).forEach((function(t){t.style.zoom=h}))}}}}function t396_scaleInitial__getElementsToScale(t){return t?Array.prototype.slice.call(t.children).filter((function(t){return t&&(t.classList.contains("t396__elem")||t.classList.contains("t396__group"))})):[]}function t396_getFieldValue(t,e,i,a){var r,n=a[a.length-1];if(!(r=i===n?t.getAttribute("data-artboard-"+e):t.getAttribute("data-artboard-"+e+"-res-"+i)))for(var l=0;l<a.length;l++){var o=a[l];if(!(o<=i)&&(r=o===n?t.getAttribute("data-artboard-"+e):t.getAttribute("data-artboard-"+e+"-res-"+o)))break}return r}window.TN_SCALE_INITIAL_VER="1.0",window.tn_scale_initial_window_width=null;</script> <script src="/js/jquery-1.10.2.min.js" charset="utf-8" onerror="this.loaderr='y';"></script> <script src="/js/tilda-scripts-3.0.min.js" charset="utf-8" defer onerror="this.loaderr='y';"></script> <script src="/js/tilda-blocks-page46042209.min.js?t=1764786434" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="/js/lazyload-1.3.min.export.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="/js/tilda-zero-1.1.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="/js/tilda-forms-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="/js/tilda-cover-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="/js/tilda-menu-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="/js/tilda-video-processor-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="/js/tilda-zero-scale-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="/js/tilda-zero-video-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="/js/tilda-zero-fixed-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="/js/tilda-skiplink-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="/js/tilda-events-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script type="text/javascript">window.dataLayer=window.dataLayer||[];</script> <script type="text/javascript">(function() {if((/bot|google|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|facebook/i.test(navigator.userAgent))===false&&typeof(sessionStorage)!='undefined'&&sessionStorage.getItem('visited')!=='y'&&document.visibilityState){var style=document.createElement('style');style.type='text/css';style.innerHTML='@media screen and (min-width: 980px) {.t-records {opacity: 0;}.t-records_animated {-webkit-transition: opacity ease-in-out .2s;-moz-transition: opacity ease-in-out .2s;-o-transition: opacity ease-in-out .2s;transition: opacity ease-in-out .2s;}.t-records.t-records_visible {opacity: 1;}}';document.getElementsByTagName('head')[0].appendChild(style);function t_setvisRecs(){var alr=document.querySelectorAll('.t-records');Array.prototype.forEach.call(alr,function(el) {el.classList.add("t-records_animated");});setTimeout(function() {Array.prototype.forEach.call(alr,function(el) {el.classList.add("t-records_visible");});sessionStorage.setItem("visited","y");},400);}
+document.addEventListener('DOMContentLoaded',t_setvisRecs);}})();</script>
+</head>
+<body class="t-body" style="margin:0;">
+<div id="allrecords" class="t-records" data-tilda-project-id="9022251">
+
+<header id="t-header" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="9022251" data-tilda-page-id="50377759" data-tilda-formskey="49b26ab8669d6d18e0a0d8db99022251" data-tilda-cookie="no" data-tilda-lazy="yes" data-tilda-root-zone="one" data-tilda-project-country="US"> <div id="rec760065804" class="r t-rec" style="background-color:#009dc9; " data-animationappear="off" data-record-type="257" data-bg-color="#009dc9"> <!-- T228 --> <div id="nav760065804marker"></div> <div class="tmenu-mobile tmenu-mobile_positionfixed"> <div class="tmenu-mobile__container"> <div class="tmenu-mobile__burgerlogo"> <a href="/"> <div class="tmenu-mobile__burgerlogo__title t-title" field="title"><div style="font-size: 26px;" data-customstyle="yes"><strong style="font-family: TacticSans;">REVELECTRIK</strong></div></div> </a> </div> <button type="button"
+class="t-menuburger t-menuburger_first t-menuburger__big"
+aria-label="Navigation menu"
+aria-expanded="false"> <span style="background-color:#fff;"></span> <span style="background-color:#fff;"></span> <span style="background-color:#fff;"></span> <span style="background-color:#fff;"></span> </button> <script>function t_menuburger_init(recid) {var rec=document.querySelector('#rec' + recid);if(!rec) return;var burger=rec.querySelector('.t-menuburger');if(!burger) return;var isSecondStyle=burger.classList.contains('t-menuburger_second');if(isSecondStyle&&!window.isMobile&&!('ontouchend' in document)) {burger.addEventListener('mouseenter',function() {if(burger.classList.contains('t-menuburger-opened')) return;burger.classList.remove('t-menuburger-unhovered');burger.classList.add('t-menuburger-hovered');});burger.addEventListener('mouseleave',function() {if(burger.classList.contains('t-menuburger-opened')) return;burger.classList.remove('t-menuburger-hovered');burger.classList.add('t-menuburger-unhovered');setTimeout(function() {burger.classList.remove('t-menuburger-unhovered');},300);});}
+burger.addEventListener('click',function() {if(!burger.closest('.tmenu-mobile')&&!burger.closest('.t450__burger_container')&&!burger.closest('.t466__container')&&!burger.closest('.t204__burger')&&!burger.closest('.t199__js__menu-toggler')) {burger.classList.toggle('t-menuburger-opened');burger.classList.remove('t-menuburger-unhovered');}});var menu=rec.querySelector('[data-menu="yes"]');if(!menu) return;var menuLinks=menu.querySelectorAll('.t-menu__link-item');var submenuClassList=['t978__menu-link_hook','t978__tm-link','t966__tm-link','t794__tm-link','t-menusub__target-link'];Array.prototype.forEach.call(menuLinks,function(link) {link.addEventListener('click',function() {var isSubmenuHook=submenuClassList.some(function(submenuClass) {return link.classList.contains(submenuClass);});if(isSubmenuHook) return;burger.classList.remove('t-menuburger-opened');});});menu.addEventListener('clickedAnchorInTooltipMenu',function() {burger.classList.remove('t-menuburger-opened');});}
+t_onReady(function() {t_onFuncLoad('t_menuburger_init',function(){t_menuburger_init('760065804');});});</script> <style>.t-menuburger{position:relative;flex-shrink:0;width:28px;height:20px;padding:0;border:none;background-color:transparent;outline:none;-webkit-transform:rotate(0deg);transform:rotate(0deg);transition:transform .5s ease-in-out;cursor:pointer;z-index:999;}.t-menuburger span{display:block;position:absolute;width:100%;opacity:1;left:0;-webkit-transform:rotate(0deg);transform:rotate(0deg);transition:.25s ease-in-out;height:3px;background-color:#000;}.t-menuburger span:nth-child(1){top:0px;}.t-menuburger span:nth-child(2),.t-menuburger span:nth-child(3){top:8px;}.t-menuburger span:nth-child(4){top:16px;}.t-menuburger__big{width:42px;height:32px;}.t-menuburger__big span{height:5px;}.t-menuburger__big span:nth-child(2),.t-menuburger__big span:nth-child(3){top:13px;}.t-menuburger__big span:nth-child(4){top:26px;}.t-menuburger__small{width:22px;height:14px;}.t-menuburger__small span{height:2px;}.t-menuburger__small span:nth-child(2),.t-menuburger__small span:nth-child(3){top:6px;}.t-menuburger__small span:nth-child(4){top:12px;}.t-menuburger-opened span:nth-child(1){top:8px;width:0%;left:50%;}.t-menuburger-opened span:nth-child(2){-webkit-transform:rotate(45deg);transform:rotate(45deg);}.t-menuburger-opened span:nth-child(3){-webkit-transform:rotate(-45deg);transform:rotate(-45deg);}.t-menuburger-opened span:nth-child(4){top:8px;width:0%;left:50%;}.t-menuburger-opened.t-menuburger__big span:nth-child(1){top:6px;}.t-menuburger-opened.t-menuburger__big span:nth-child(4){top:18px;}.t-menuburger-opened.t-menuburger__small span:nth-child(1),.t-menuburger-opened.t-menuburger__small span:nth-child(4){top:6px;}@media (hover),(min-width:0\0){.t-menuburger_first:hover span:nth-child(1){transform:translateY(1px);}.t-menuburger_first:hover span:nth-child(4){transform:translateY(-1px);}.t-menuburger_first.t-menuburger__big:hover span:nth-child(1){transform:translateY(3px);}.t-menuburger_first.t-menuburger__big:hover span:nth-child(4){transform:translateY(-3px);}}.t-menuburger_second span:nth-child(2),.t-menuburger_second span:nth-child(3){width:80%;left:20%;right:0;}@media (hover),(min-width:0\0){.t-menuburger_second.t-menuburger-hovered span:nth-child(2),.t-menuburger_second.t-menuburger-hovered span:nth-child(3){animation:t-menuburger-anim 0.3s ease-out normal forwards;}.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),.t-menuburger_second.t-menuburger-unhovered span:nth-child(3){animation:t-menuburger-anim2 0.3s ease-out normal forwards;}}.t-menuburger_second.t-menuburger-opened span:nth-child(2),.t-menuburger_second.t-menuburger-opened span:nth-child(3){left:0;right:0;width:100%!important;}.t-menuburger_third span:nth-child(4){width:70%;left:unset;right:0;}@media (hover),(min-width:0\0){.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4){width:100%;}}.t-menuburger_third.t-menuburger-opened span:nth-child(4){width:0!important;right:50%;}.t-menuburger_fourth{height:12px;}.t-menuburger_fourth.t-menuburger__small{height:8px;}.t-menuburger_fourth.t-menuburger__big{height:18px;}.t-menuburger_fourth span:nth-child(2),.t-menuburger_fourth span:nth-child(3){top:4px;opacity:0;}.t-menuburger_fourth span:nth-child(4){top:8px;}.t-menuburger_fourth.t-menuburger__small span:nth-child(2),.t-menuburger_fourth.t-menuburger__small span:nth-child(3){top:3px;}.t-menuburger_fourth.t-menuburger__small span:nth-child(4){top:6px;}.t-menuburger_fourth.t-menuburger__small span:nth-child(2),.t-menuburger_fourth.t-menuburger__small span:nth-child(3){top:3px;}.t-menuburger_fourth.t-menuburger__small span:nth-child(4){top:6px;}.t-menuburger_fourth.t-menuburger__big span:nth-child(2),.t-menuburger_fourth.t-menuburger__big span:nth-child(3){top:6px;}.t-menuburger_fourth.t-menuburger__big span:nth-child(4){top:12px;}@media (hover),(min-width:0\0){.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1){transform:translateY(1px);}.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4){transform:translateY(-1px);}.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1){transform:translateY(3px);}.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4){transform:translateY(-3px);}}.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),.t-menuburger_fourth.t-menuburger-opened span:nth-child(4){top:4px;}.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),.t-menuburger_fourth.t-menuburger-opened span:nth-child(3){opacity:1;}@keyframes t-menuburger-anim{0%{width:80%;left:20%;right:0;}50%{width:100%;left:0;right:0;}100%{width:80%;left:0;right:20%;}}@keyframes t-menuburger-anim2{0%{width:80%;left:0;}50%{width:100%;right:0;left:0;}100%{width:80%;left:20%;right:0;}}</style> </div> </div> <style>.tmenu-mobile{background-color:#111;display:none;width:100%;top:0;z-index:990;}.tmenu-mobile_positionfixed{position:fixed;}.tmenu-mobile__text{color:#fff;}.tmenu-mobile__container{min-height:64px;padding:20px;position:relative;box-sizing:border-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}.tmenu-mobile__list{display:block;}.tmenu-mobile__burgerlogo{display:inline-block;font-size:24px;font-weight:400;white-space:nowrap;vertical-align:middle;}.tmenu-mobile__imglogo{height:auto;display:block;max-width:300px!important;box-sizing:border-box;padding:0;margin:0 auto;}@media screen and (max-width:980px){.tmenu-mobile__menucontent_hidden{display:none;height:100%;}.tmenu-mobile{display:block;}}@media screen and (max-width:980px){#rec760065804 .tmenu-mobile{background-color:#009dc9;}#rec760065804 .tmenu-mobile__menucontent_fixed{position:fixed;top:64px;}#rec760065804 .t-menuburger{-webkit-order:1;-ms-flex-order:1;order:1;}}</style> <style> #rec760065804 .tmenu-mobile__burgerlogo a{color:#ffffff;font-family:'TacticSans';text-transform:uppercase;}</style> <style> #rec760065804 .tmenu-mobile__burgerlogo__title{color:#ffffff;font-family:'TacticSans';text-transform:uppercase;}</style> <div id="nav760065804" data-full-submenu-mob="y" class="t228 t228__positionfixed tmenu-mobile__menucontent_hidden tmenu-mobile__menucontent_fixed" style="background-color: rgba(0,157,201,1); " data-bgcolor-hex="#009dc9" data-bgcolor-rgba="rgba(0,157,201,1)" data-navmarker="nav760065804marker" data-appearoffset="" data-bgopacity-two="" data-menushadow="" data-menushadow-css="0px 1px 3px rgba(0,0,0,0.2)" data-bgopacity="1" data-menu-items-align="center" data-menu="yes"> <div class="t228__maincontainer " style=""> <div class="t228__padding40px"></div> <div class="t228__leftside"> <div class="t228__leftcontainer"> <a href="/" class="t228__imgwrapper"> <div class="t228__logo t-title" field="title"><div style="font-size: 26px;" data-customstyle="yes"><strong style="font-family: TacticSans;">REVELECTRIK</strong></div></div> </a> </div> </div> <div class="t228__centerside "> <nav class="t228__centercontainer"> <ul role="list" class="t228__list t-menu__list t228__list_hidden"> <li class="t228__list_item"
+style="padding:0 15px 0 0;"> <a class="t-menu__link-item"
+href="https://revelectrik.com/#aboutus" data-menu-submenu-hook="" data-menu-item-number="1">
+ABOUT US
+</a> </li> <li class="t228__list_item"
+style="padding:0 15px;"> <a class="t-menu__link-item"
+href="/ourproducts" data-menu-submenu-hook="" data-menu-item-number="2">
+OUR PRODUCTS
+</a> </li> <li class="t228__list_item"
+style="padding:0 15px;"> <a class="t-menu__link-item"
+href="/team" data-menu-submenu-hook="" data-menu-item-number="3">
+OUR TEAM
+</a> </li> <li class="t228__list_item"
+style="padding:0 15px;"> <a class="t-menu__link-item"
+href="/advisors" data-menu-submenu-hook="" data-menu-item-number="4">
+ADVISORS
+</a> </li> <li class="t228__list_item"
+style="padding:0 15px;"> <a class="t-menu__link-item"
+href="https://revelectrik.com/#ourpartners" data-menu-submenu-hook="" data-menu-item-number="5">
+OUR PARTNERS
+</a> </li> <li class="t228__list_item"
+style="padding:0 0 0 15px;"> <a class="t-menu__link-item"
+href="https://revelectrik.com/#contacts" data-menu-submenu-hook="" data-menu-item-number="6">
+CONTACTS
+</a> </li> </ul> </nav> </div> <div class="t228__rightside"> <div class="t228__rightcontainer"> <div class="t-sociallinks"> <ul role="list" class="t-sociallinks__wrapper" aria-label="Social media links"> <!-- new soclinks --><li class="t-sociallinks__item t-sociallinks__item_facebook"><a href="https://www.facebook.com/revelectrik" target="_blank" rel="nofollow" aria-label="facebook" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" role="presentation" width=30px height=30px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.6142 0 50-22.3858 50-50S77.6142 0 50 0 0 22.3858 0 50s22.3858 50 50 50Zm3.431-73.9854c-2.5161.0701-5.171.6758-7.0464 2.4577-1.5488 1.4326-2.329 3.5177-2.5044 5.602-.0534 1.4908-.0458 2.9855-.0382 4.4796.0058 1.1205.0115 2.2407-.0085 3.3587-.6888.005-1.3797.0036-2.0709.0021-.9218-.0019-1.8441-.0038-2.7626.0096 0 .8921.0013 1.7855.0026 2.6797.0026 1.791.0052 3.5853-.0026 5.3799.9185.0134 1.8409.0115 2.7627.0096.6912-.0015 1.382-.0029 2.0708.0021.0155 3.5565.0127 7.1128.0098 10.669-.0036 4.4452-.0072 8.8903.0252 13.3354 1.8903-.0134 3.7765-.0115 5.6633-.0095 1.4152.0014 2.8306.0028 4.2484-.0022.0117-4.0009.0088-7.9986.0058-11.9963-.0029-3.9979-.0058-7.9957.0059-11.9964.9533-.005 1.9067-.0036 2.86-.0021 1.2713.0019 2.5425.0038 3.8137-.0096.396-2.679.7335-5.3814.9198-8.0947-1.2576-.0058-2.5155-.0058-3.7734-.0058-1.2578 0-2.5157 0-3.7734-.0059 0-.4689-.0007-.9378-.0014-1.4066-.0022-1.4063-.0044-2.8123.0131-4.2188.198-1.0834 1.3158-1.9104 2.3992-1.8403h5.1476c.0117-2.8069.0117-5.602 0-8.4089-.6636 0-1.3273-.0007-1.9911-.0014-1.9915-.0022-3.9832-.0044-5.975.0131Z" fill="#ffffff"/> </svg></a></li>&nbsp;<li class="t-sociallinks__item t-sociallinks__item_twitter"><a href="https://twitter.com/revelectri27827" target="_blank" rel="nofollow" aria-label="twitter" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" role="presentation" xmlns="http://www.w3.org/2000/svg" width=30px height=30px viewBox="0 0 48 48"> <g clip-path="url(#clip0_3697_102)"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48ZM33.3482 14L25.9027 22.4686H25.9023L34 34H28.0445L22.5915 26.2348L15.7644 34H14L21.8082 25.1193L14 14H19.9555L25.119 21.3532L31.5838 14H33.3482ZM22.695 24.1101L23.4861 25.2173V25.2177L28.8746 32.7594H31.5847L24.9813 23.5172L24.1902 22.4099L19.1103 15.2997H16.4002L22.695 24.1101Z" fill="#ffffff"/></g><defs><clipPath id="clip0_3697_102"><rect width="48" height="48" fill="white"/></clipPath></defs> </svg></a></li>&nbsp;<li class="t-sociallinks__item t-sociallinks__item_instagram"><a href="https://www.instagram.com/revelectrik/" target="_blank" rel="nofollow" aria-label="instagram" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" role="presentation" width=30px height=30px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100ZM25 39.3918C25 31.4558 31.4566 25 39.3918 25H60.6082C68.5442 25 75 31.4566 75 39.3918V60.8028C75 68.738 68.5442 75.1946 60.6082 75.1946H39.3918C31.4558 75.1946 25 68.738 25 60.8028V39.3918ZM36.9883 50.0054C36.9883 42.8847 42.8438 37.0922 50.0397 37.0922C57.2356 37.0922 63.0911 42.8847 63.0911 50.0054C63.0911 57.1252 57.2356 62.9177 50.0397 62.9177C42.843 62.9177 36.9883 57.1252 36.9883 50.0054ZM41.7422 50.0054C41.7422 54.5033 45.4641 58.1638 50.0397 58.1638C54.6153 58.1638 58.3372 54.5041 58.3372 50.0054C58.3372 45.5066 54.6145 41.8469 50.0397 41.8469C45.4641 41.8469 41.7422 45.5066 41.7422 50.0054ZM63.3248 39.6355C65.0208 39.6355 66.3956 38.2606 66.3956 36.5646C66.3956 34.8687 65.0208 33.4938 63.3248 33.4938C61.6288 33.4938 60.2539 34.8687 60.2539 36.5646C60.2539 38.2606 61.6288 39.6355 63.3248 39.6355Z" fill="#ffffff"/> </svg></a></li>&nbsp;<li class="t-sociallinks__item t-sociallinks__item_linkedin"><a href="https://www.linkedin.com/company/revelectrik/" target="_blank" rel="nofollow" aria-label="linkedin" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" role="presentation" width=30px height=30px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.6142 0 50-22.3858 50-50S77.6142 0 50 0 0 22.3858 0 50s22.3858 50 50 50Zm23-31.0002V52.363c0-8.9114-4.7586-13.0586-11.1079-13.0586-5.1234 0-7.4123 2.8199-8.6942 4.7942v-4.1124h-9.6468c.1297 2.7235 0 29.0136 0 29.0136h9.6484v-16.203c0-.8675.0657-1.731.3203-2.3513.6981-1.7351 2.284-3.5286 4.9491-3.5286 3.4905 0 4.8859 2.6611 4.8859 6.5602v15.5227H73ZM53.1979 44.0986v.094h-.0632c.0069-.0111.0148-.0228.0229-.0346.0137-.0198.0281-.0401.0403-.0594ZM28 31.0123C28 28.1648 30.1583 26 33.4591 26c3.3016 0 5.3302 2.1648 5.3934 5.0123 0 2.7851-2.0918 5.0156-5.4567 5.0156h-.064c-3.2351 0-5.3318-2.2305-5.3318-5.0156Zm10.2177 37.9875h-9.6445V39.9862h9.6445v29.0136Z" fill="#ffffff"/> </svg></a></li><!-- /new soclinks --> </ul> </div> <div class="t228__right_buttons"> <div class="t228__right_buttons_wrap"> <div class="t228__right_buttons_but"> <a
+class="t-btn t-btnflex t-btnflex_type_button t-btnflex_sm"
+href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#rec760065804 .t-btnflex.t-btnflex_type_button {color:#009dc9;background-color:#ffffff;--border-width:0px;border-style:none !important;border-radius:20px;box-shadow:none !important;transition-duration:0.2s;transition-property:background-color,color,border-color,box-shadow,opacity,transform,gap;transition-timing-function:ease-in-out;}</style> </a> </div> </div> </div> </div> </div> <div class="t228__padding40px"> </div> </div> </div> <style>@media screen and (max-width:980px){#rec760065804 .t228__leftcontainer{display:none;}}</style> <style>@media screen and (max-width:980px){#rec760065804 .t228{}}</style> <script>window.addEventListener('load',function() {t_onFuncLoad('t228_setWidth',function() {t228_setWidth('760065804');});});window.addEventListener('resize',t_throttle(function() {t_onFuncLoad('t228_setWidth',function() {t228_setWidth('760065804');});t_onFuncLoad('t_menu__setBGcolor',function() {t_menu__setBGcolor('760065804','.t228');});}));t_onReady(function() {t_onFuncLoad('t_menu__highlightActiveLinks',function() {t_menu__highlightActiveLinks('.t228__list_item a');});t_onFuncLoad('t_menu__findAnchorLinks',function() {t_menu__findAnchorLinks('760065804','.t228__list_item a');});t_onFuncLoad('t228__init',function() {t228__init('760065804');});t_onFuncLoad('t_menu__setBGcolor',function() {t_menu__setBGcolor('760065804','.t228');});t_onFuncLoad('t_menu__interactFromKeyboard',function() {t_menu__interactFromKeyboard('760065804');});t_onFuncLoad('t228_setWidth',function() {t228_setWidth('760065804');});t_onFuncLoad('t_menu__createMobileMenu',function() {t_menu__createMobileMenu('760065804','.t228');});});</script> <style>#rec760065804 .t-menu__link-item{-webkit-transition:color 0.3s ease-in-out,opacity 0.3s ease-in-out;transition:color 0.3s ease-in-out,opacity 0.3s ease-in-out;}#rec760065804 .t-menu__link-item.t-active:not(.t978__menu-link){color:#00eaff !important;}#rec760065804 .t-menu__link-item:not(.t-active):not(.tooltipstered):hover{color:#00eaff !important;}#rec760065804 .t-menu__link-item:not(.t-active):not(.tooltipstered):focus-visible{color:#00eaff !important;}@supports (overflow:-webkit-marquee) and (justify-content:inherit){#rec760065804 .t-menu__link-item,#rec760065804 .t-menu__link-item.t-active{opacity:1 !important;}}</style> <style> #rec760065804 a.t-menusub__link-item{font-family:'TacticSans';}</style> <style> #rec760065804 .t228__leftcontainer a{color:#ffffff;font-family:'TacticSans';text-transform:uppercase;}#rec760065804 a.t-menu__link-item{font-size:20px;color:#ffffff;font-family:'TacticSans';font-weight:700;}#rec760065804 .t228__right_langs_lang a{font-size:20px;color:#ffffff;font-family:'TacticSans';font-weight:700;}#rec760065804 .t228__right_descr{font-size:14px;font-family:'TacticSans';font-weight:600;}</style> <style> #rec760065804 .t228__logo{color:#ffffff;font-family:'TacticSans';text-transform:uppercase;}</style> <style>#rec760065804 .t228 {box-shadow:0px 1px 3px rgba(0,0,0,0.2);}</style> </div> </header>
+
+<main>
+<!-- hero-section.html -->
+<style>
+#fp-hero {
+  font-family: 'TacticSans', Arial, sans-serif;
+  background: linear-gradient(135deg, #0a0f1a 0%, #000d16 55%, #001a22 100%);
+  color: #ffffff;
+  padding: 100px 20px 90px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+#fp-hero::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(0,212,170,0.08) 0%, transparent 65%);
+  pointer-events: none;
+}
+#fp-hero .fp-hero-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+#fp-hero .fp-eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #00d4aa;
+  border: 1px solid rgba(0,212,170,0.4);
+  border-radius: 20px;
+  padding: 5px 18px;
+  margin-bottom: 28px;
+}
+#fp-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 22px;
+  color: #ffffff;
+}
+#fp-hero h1 span {
+  color: #00eaff;
+}
+#fp-hero .fp-sub {
+  font-size: 18px;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.78);
+  max-width: 680px;
+  margin: 0 auto 44px;
+}
+.fp-hero-btns {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.fp-btn-primary {
+  display: inline-block;
+  background: #00d4aa;
+  color: #0a0f1a;
+  font-family: 'TacticSans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 15px 36px;
+  border-radius: 7px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.2s, transform 0.2s;
+}
+.fp-btn-primary:hover {
+  background: #00eaff;
+  transform: translateY(-2px);
+}
+.fp-btn-primary::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 10px;
+  border: 2px solid rgba(0,212,170,0.5);
+  animation: fp-pulse 2s ease-in-out infinite;
+}
+@keyframes fp-pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 0; transform: scale(1.08); }
+}
+.fp-btn-ghost {
+  display: inline-block;
+  background: transparent;
+  color: #ffffff;
+  font-family: 'TacticSans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 14px 34px;
+  border-radius: 7px;
+  border: 1.5px solid rgba(255,255,255,0.35);
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s, transform 0.2s;
+}
+.fp-btn-ghost:hover {
+  border-color: #00eaff;
+  color: #00eaff;
+  transform: translateY(-2px);
+}
+.fp-hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 64px;
+  flex-wrap: wrap;
+}
+.fp-stat {
+  text-align: center;
+}
+.fp-stat-num {
+  font-size: 32px;
+  font-weight: 700;
+  color: #00d4aa;
+  line-height: 1;
+}
+.fp-stat-label {
+  font-size: 13px;
+  color: rgba(255,255,255,0.55);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 6px;
+}
+@media (max-width: 768px) {
+  #fp-hero { padding: 70px 20px 60px; }
+  #fp-hero h1 { font-size: 30px; }
+  #fp-hero .fp-sub { font-size: 16px; }
+  .fp-hero-stats { gap: 28px; }
+  .fp-stat-num { font-size: 26px; }
+}
+</style>
+
+<section id="fp-hero">
+  <div class="fp-hero-inner">
+    <div class="fp-eyebrow">FleetPulse — CAN Bus Telemetry Platform</div>
+    <h1>Real-Time <span>CAN Bus Telemetry</span><br>for Commercial EV Fleets</h1>
+    <p class="fp-sub">From vehicle to cloud dashboard in under an hour. Monitor battery health, motor performance, and drivetrain diagnostics across your entire fleet.</p>
+    <div class="fp-hero-btns">
+      <a href="#fp-cta" class="fp-btn-primary">Book a Demo</a>
+      <a href="https://github.com/subhasisrevelectrik/telemetry-platform" target="_blank" rel="noopener" class="fp-btn-ghost">View on GitHub →</a>
+    </div>
+    <div class="fp-hero-stats">
+      <div class="fp-stat">
+        <div class="fp-stat-num">&lt;1 hr</div>
+        <div class="fp-stat-label">Installation time</div>
+      </div>
+      <div class="fp-stat">
+        <div class="fp-stat-num">100K+</div>
+        <div class="fp-stat-label">Data points per vehicle/day</div>
+      </div>
+      <div class="fp-stat">
+        <div class="fp-stat-num">40%</div>
+        <div class="fp-stat-label">Downtime reduction</div>
+      </div>
+      <div class="fp-stat">
+        <div class="fp-stat-num">1-cmd</div>
+        <div class="fp-stat-label">Cloud deploy (AWS CDK)</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- problem-section.html -->
+<style>
+#fp-problems {
+  font-family: 'TacticSans', Arial, sans-serif;
+  background: #000;
+  color: #ffffff;
+  padding: 90px 20px;
+}
+#fp-problems .fp-section-label {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #e5194a;
+  margin-bottom: 16px;
+}
+#fp-problems h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  color: #ffffff;
+}
+#fp-problems .fp-section-sub {
+  text-align: center;
+  color: rgba(255,255,255,0.6);
+  font-size: 16px;
+  max-width: 560px;
+  margin: 0 auto 56px;
+  line-height: 1.6;
+}
+.fp-problem-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.fp-problem-card {
+  background: #111827;
+  border: 1px solid rgba(229,25,74,0.15);
+  border-radius: 10px;
+  padding: 36px 32px;
+  transition: border-color 0.25s, transform 0.25s;
+  opacity: 0;
+  transform: translateY(24px);
+}
+.fp-problem-card.fp-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease, border-color 0.25s, box-shadow 0.25s;
+}
+.fp-problem-card:hover {
+  border-color: #e5194a;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(229,25,74,0.12);
+}
+.fp-problem-icon {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 22px;
+}
+.fp-problem-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 14px;
+  line-height: 1.3;
+}
+.fp-problem-card p {
+  font-size: 15px;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.65;
+  margin: 0;
+}
+.fp-problem-card .fp-problem-tag {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #e5194a;
+  margin-bottom: 10px;
+}
+@media (max-width: 1024px) {
+  .fp-problem-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  #fp-problems { padding: 60px 20px; }
+  #fp-problems h2 { font-size: 26px; }
+  .fp-problem-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<section id="fp-problems">
+  <div class="fp-section-label">The Problem</div>
+  <h2>Why Fleet Managers Are Flying Blind</h2>
+  <p class="fp-section-sub">Legacy telematics weren't built for electric drivetrains. CAN bus data stays trapped on the vehicle — until it's too late.</p>
+
+  <div class="fp-problem-grid">
+
+    <div class="fp-problem-card fp-animate">
+      <!-- Icon: eye with slash -->
+      <svg class="fp-problem-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="52" height="52" rx="10" fill="rgba(229,25,74,0.1)"/>
+        <path d="M10 26C10 26 17 16 26 16C35 16 42 26 42 26C42 26 35 36 26 36C17 36 10 26 10 26Z" stroke="#e5194a" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="26" cy="26" r="5" stroke="#e5194a" stroke-width="2"/>
+        <line x1="12" y1="14" x2="40" y2="38" stroke="#e5194a" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <div class="fp-problem-tag">Problem 01</div>
+      <h3>Blind Spots Kill Uptime</h3>
+      <p>Fleet managers discover failures after vehicles are stranded. Without real-time CAN-level visibility, maintenance is always reactive and expensive.</p>
+    </div>
+
+    <div class="fp-problem-card fp-animate">
+      <!-- Icon: plug/connector -->
+      <svg class="fp-problem-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="52" height="52" rx="10" fill="rgba(229,25,74,0.1)"/>
+        <rect x="20" y="12" width="12" height="10" rx="2" stroke="#e5194a" stroke-width="2"/>
+        <line x1="26" y1="22" x2="26" y2="28" stroke="#e5194a" stroke-width="2"/>
+        <path d="M18 28H34C34 34 30.418 38 26 38C21.582 38 18 34 18 28Z" stroke="#e5194a" stroke-width="2" stroke-linejoin="round"/>
+        <line x1="22" y1="15" x2="22" y2="20" stroke="#e5194a" stroke-width="1.5"/>
+        <line x1="30" y1="15" x2="30" y2="20" stroke="#e5194a" stroke-width="1.5"/>
+        <line x1="14" y1="26" x2="17" y2="26" stroke="#e5194a" stroke-width="2" stroke-linecap="round"/>
+        <line x1="35" y1="26" x2="38" y2="26" stroke="#e5194a" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <div class="fp-problem-tag">Problem 02</div>
+      <h3>OBD-II Isn't Enough</h3>
+      <p>Generic scanners read a fraction of available CAN signals. Proprietary BMS data, motor controller thermals, and coolant diagnostics stay invisible.</p>
+    </div>
+
+    <div class="fp-problem-card fp-animate">
+      <!-- Icon: lock/chain -->
+      <svg class="fp-problem-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="52" height="52" rx="10" fill="rgba(229,25,74,0.1)"/>
+        <rect x="16" y="26" width="20" height="14" rx="3" stroke="#e5194a" stroke-width="2"/>
+        <path d="M20 26V20C20 16.686 22.686 14 26 14C29.314 14 32 16.686 32 20V26" stroke="#e5194a" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="26" cy="32" r="2" fill="#e5194a"/>
+        <line x1="26" y1="34" x2="26" y2="37" stroke="#e5194a" stroke-width="1.5"/>
+      </svg>
+      <div class="fp-problem-tag">Problem 03</div>
+      <h3>Vendor Lock-In Traps</h3>
+      <p>Telematics providers own your fleet data, charge per vehicle per month, and make switching painful. Your operational intelligence shouldn't be held hostage.</p>
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function() {
+  var cards = document.querySelectorAll('#fp-problems .fp-animate');
+  if (!cards.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry, i) {
+      if (entry.isIntersecting) {
+        setTimeout(function() {
+          entry.target.classList.add('fp-visible');
+        }, i * 120);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  cards.forEach(function(c) { observer.observe(c); });
+})();
+</script>
+<!-- how-it-works-section.html -->
+<style>
+#fp-how {
+  font-family: 'TacticSans', Arial, sans-serif;
+  background: #ebebeb;
+  color: #000000;
+  padding: 90px 20px;
+}
+#fp-how .fp-section-label {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #009dc9;
+  margin-bottom: 14px;
+}
+#fp-how h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  color: #000;
+}
+#fp-how .fp-section-sub {
+  text-align: center;
+  color: rgba(0,0,0,0.55);
+  font-size: 16px;
+  max-width: 520px;
+  margin: 0 auto 64px;
+  line-height: 1.6;
+}
+.fp-pipeline {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+.fp-step {
+  flex: 1;
+  text-align: center;
+  padding: 0 16px;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.fp-step.fp-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fp-step-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid #00d4aa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #00d4aa;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 0 6px rgba(0,212,170,0.1);
+}
+.fp-step-connector {
+  position: absolute;
+  top: 35px;
+  right: -50%;
+  width: 100%;
+  height: 2px;
+  border-top: 2.5px dashed rgba(0,212,170,0.45);
+  z-index: 0;
+}
+.fp-step:last-child .fp-step-connector { display: none; }
+.fp-step-icon {
+  margin-bottom: 14px;
+}
+.fp-step h3 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  color: #000;
+}
+.fp-step p {
+  font-size: 14px;
+  color: rgba(0,0,0,0.6);
+  line-height: 1.6;
+  margin: 0;
+}
+.fp-step-time {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #009dc9;
+  margin-bottom: 8px;
+}
+
+/* Vertical on mobile */
+@media (max-width: 768px) {
+  #fp-how { padding: 60px 20px; }
+  #fp-how h2 { font-size: 26px; }
+  .fp-pipeline {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .fp-step {
+    width: 100%;
+    max-width: 340px;
+    padding: 0 20px 40px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    text-align: left;
+  }
+  .fp-step-left { flex-shrink: 0; display: flex; flex-direction: column; align-items: center; }
+  .fp-step-circle { margin: 0 0 0; }
+  .fp-step-connector {
+    position: static;
+    width: 2px;
+    height: 40px;
+    border-top: none;
+    border-left: 2.5px dashed rgba(0,212,170,0.45);
+    margin: 8px auto 0;
+    display: block;
+  }
+  .fp-step:last-child .fp-step-connector { display: none; }
+  .fp-step-body { flex: 1; padding-top: 12px; }
+}
+</style>
+
+<section id="fp-how">
+  <div class="fp-section-label">How It Works</div>
+  <h2>From CAN Bus to Dashboard in 4 Steps</h2>
+  <p class="fp-section-sub">No proprietary hardware. No vendor lock-in. Full data ownership from day one.</p>
+
+  <div class="fp-pipeline">
+
+    <div class="fp-step fp-animate">
+      <div class="fp-step-left">
+        <div class="fp-step-circle">1</div>
+        <div class="fp-step-connector"></div>
+      </div>
+      <div class="fp-step-body">
+        <div class="fp-step-time">Step 01</div>
+        <h3>Install</h3>
+        <p>Raspberry Pi edge unit connects via OBD-II port or direct CAN tap. Under 1 hour, no vehicle downtime.</p>
+      </div>
+    </div>
+
+    <div class="fp-step fp-animate">
+      <div class="fp-step-left">
+        <div class="fp-step-circle">2</div>
+        <div class="fp-step-connector"></div>
+      </div>
+      <div class="fp-step-body">
+        <div class="fp-step-time">Step 02</div>
+        <h3>Capture</h3>
+        <p>CAN frames decoded via DBC files, batched to Apache Parquet, buffered offline with automatic retry.</p>
+      </div>
+    </div>
+
+    <div class="fp-step fp-animate">
+      <div class="fp-step-left">
+        <div class="fp-step-circle">3</div>
+        <div class="fp-step-connector"></div>
+      </div>
+      <div class="fp-step-body">
+        <div class="fp-step-time">Step 03</div>
+        <h3>Stream</h3>
+        <p>Compressed Parquet uploads to your AWS S3 bucket. Lambda auto-decodes on arrival, no manual pipeline.</p>
+      </div>
+    </div>
+
+    <div class="fp-step fp-animate">
+      <div class="fp-step-left">
+        <div class="fp-step-circle">4</div>
+        <div class="fp-step-connector"></div>
+      </div>
+      <div class="fp-step-body">
+        <div class="fp-step-time">Step 04</div>
+        <h3>Visualize</h3>
+        <p>React dashboard. Any vehicle, any signal, any time range. Zoom, pan, and export with one click.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function() {
+  // On mobile, wrap content
+  function adjustMobileLayout() {
+    if (window.innerWidth <= 768) {
+      document.querySelectorAll('#fp-how .fp-step').forEach(function(step) {
+        if (step.querySelector('.fp-step-left')) return;
+        var circle = step.querySelector('.fp-step-circle');
+        var conn = step.querySelector('.fp-step-connector');
+        var left = document.createElement('div');
+        left.className = 'fp-step-left';
+        if (circle) left.appendChild(circle);
+        if (conn) left.appendChild(conn);
+        var body = document.createElement('div');
+        body.className = 'fp-step-body';
+        Array.from(step.children).forEach(function(c) { body.appendChild(c); });
+        step.appendChild(left);
+        step.appendChild(body);
+      });
+    }
+  }
+
+  var steps = document.querySelectorAll('#fp-how .fp-animate');
+  if (!steps.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry, i) {
+      if (entry.isIntersecting) {
+        setTimeout(function() {
+          entry.target.classList.add('fp-visible');
+        }, i * 150);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  steps.forEach(function(s) { observer.observe(s); });
+})();
+</script>
+<!-- features-grid.html -->
+<style>
+#fp-features {
+  font-family: 'TacticSans', Arial, sans-serif;
+  background: #111;
+  color: #ffffff;
+  padding: 90px 20px;
+}
+#fp-features .fp-section-label {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #00d4aa;
+  margin-bottom: 14px;
+}
+#fp-features h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  color: #ffffff;
+}
+#fp-features .fp-section-sub {
+  text-align: center;
+  color: rgba(255,255,255,0.55);
+  font-size: 16px;
+  max-width: 540px;
+  margin: 0 auto 56px;
+  line-height: 1.6;
+}
+.fp-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.fp-feature-card {
+  background: #111827;
+  border: 1px solid rgba(0,157,201,0.12);
+  border-radius: 10px;
+  padding: 30px 28px;
+  transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.fp-feature-card.fp-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.45s ease, transform 0.45s ease, border-color 0.25s, box-shadow 0.25s;
+}
+.fp-feature-card:hover {
+  border-color: #00d4aa;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 36px rgba(0,212,170,0.1);
+}
+.fp-feature-card.fp-soon { opacity: 0.7; }
+.fp-feature-card.fp-soon:hover { transform: none; box-shadow: none; }
+.fp-badge-soon {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #f59e0b;
+  border: 1px solid rgba(245,158,11,0.4);
+  border-radius: 20px;
+  padding: 3px 10px;
+  margin-bottom: 14px;
+}
+.fp-feature-icon {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 18px;
+}
+.fp-feature-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 10px;
+  letter-spacing: 0.5px;
+}
+.fp-feature-card p {
+  font-size: 14px;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.6;
+  margin: 0;
+}
+@media (max-width: 1024px) { .fp-features-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 768px) {
+  #fp-features { padding: 60px 20px; }
+  #fp-features h2 { font-size: 26px; }
+  .fp-features-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<section id="fp-features">
+  <div class="fp-section-label">Capabilities</div>
+  <h2>Everything Your Fleet Intelligence Needs</h2>
+  <p class="fp-section-sub">Built for real CAN bus complexity, not watered-down OBD-II readings.</p>
+
+  <div class="fp-features-grid">
+
+    <!-- Row 1 -->
+    <div class="fp-feature-card fp-animate">
+      <svg class="fp-feature-icon" viewBox="0 0 44 44" fill="none">
+        <rect width="44" height="44" rx="8" fill="rgba(0,157,201,0.1)"/>
+        <path d="M10 22H34M22 10L10 22L22 34" stroke="#009dc9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="34" cy="22" r="4" stroke="#00d4aa" stroke-width="2"/>
+      </svg>
+      <h3>DBC-Driven Decoding</h3>
+      <p>Supports J1939, UDS, and OEM proprietary DBC files. Decode any signal your vehicle exposes on the CAN bus.</p>
+    </div>
+
+    <div class="fp-feature-card fp-animate">
+      <svg class="fp-feature-icon" viewBox="0 0 44 44" fill="none">
+        <rect width="44" height="44" rx="8" fill="rgba(0,212,170,0.1)"/>
+        <rect x="8" y="14" width="28" height="18" rx="3" stroke="#00d4aa" stroke-width="2"/>
+        <path d="M14 26 L18 20 L22 24 L26 17 L30 22" stroke="#00d4aa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h3>Interactive Dashboard</h3>
+      <p>Plotly.js-powered time-series charts. Zoom, pan, and export any signal. Multi-vehicle comparison in one view.</p>
+    </div>
+
+    <div class="fp-feature-card fp-animate">
+      <svg class="fp-feature-icon" viewBox="0 0 44 44" fill="none">
+        <rect width="44" height="44" rx="8" fill="rgba(0,157,201,0.1)"/>
+        <path d="M22 8V36M8 22H36" stroke="rgba(0,157,201,0.3)" stroke-width="1"/>
+        <rect x="14" y="14" width="16" height="16" rx="3" stroke="#009dc9" stroke-width="2"/>
+        <path d="M18 22 L22 18 L26 22" stroke="#009dc9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M22 18V30" stroke="#009dc9" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      <h3>Edge Buffering</h3>
+      <p>Local Parquet storage survives connectivity gaps. Automatic retry queues ensure zero data loss, even offline.</p>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="fp-feature-card fp-animate">
+      <svg class="fp-feature-icon" viewBox="0 0 44 44" fill="none">
+        <rect width="44" height="44" rx="8" fill="rgba(0,212,170,0.1)"/>
+        <path d="M22 10C15.373 10 10 15.373 10 22C10 28.627 15.373 34 22 34C28.627 34 34 28.627 34 22" stroke="#00d4aa" stroke-width="2" stroke-linecap="round"/>
+        <path d="M28 10L34 16L28 22" stroke="#00d4aa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M34 10L34 22" stroke="#00d4aa" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <h3>Your Data, Your Cloud</h3>
+      <p>Deploys into your own AWS account. S3, Lambda, Athena — you own the infrastructure and every byte of data.</p>
+    </div>
+
+    <div class="fp-feature-card fp-animate">
+      <svg class="fp-feature-icon" viewBox="0 0 44 44" fill="none">
+        <rect width="44" height="44" rx="8" fill="rgba(0,157,201,0.1)"/>
+        <polyline points="8,32 14,24 20,28 26,16 32,20 38,12" stroke="#009dc9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="38" cy="12" r="3" fill="#009dc9"/>
+      </svg>
+      <h3>LTTB Downsampling</h3>
+      <p>Largest-Triangle-Three-Buckets algorithm renders 100K+ data points smoothly. Perceptually lossless visualization.</p>
+    </div>
+
+    <div class="fp-feature-card fp-animate">
+      <svg class="fp-feature-icon" viewBox="0 0 44 44" fill="none">
+        <rect width="44" height="44" rx="8" fill="rgba(0,212,170,0.1)"/>
+        <rect x="10" y="10" width="10" height="10" rx="2" stroke="#00d4aa" stroke-width="2"/>
+        <rect x="24" y="10" width="10" height="10" rx="2" stroke="#00d4aa" stroke-width="2"/>
+        <rect x="10" y="24" width="10" height="10" rx="2" stroke="#00d4aa" stroke-width="2"/>
+        <rect x="24" y="24" width="10" height="10" rx="2" stroke="rgba(0,212,170,0.4)" stroke-width="2" stroke-dasharray="3 2"/>
+      </svg>
+      <h3>Infrastructure as Code</h3>
+      <p>AWS CDK stack. One command deploys the entire platform: S3, Lambda, Athena, API Gateway, Cognito.</p>
+    </div>
+
+    <!-- Row 3 — Coming Soon -->
+    <div class="fp-feature-card fp-soon fp-animate">
+      <div class="fp-badge-soon">Coming Soon</div>
+      <svg class="fp-feature-icon" viewBox="0 0 44 44" fill="none">
+        <rect width="44" height="44" rx="8" fill="rgba(245,158,11,0.08)"/>
+        <path d="M22 10L25 18H34L27 23L30 31L22 26L14 31L17 23L10 18H19L22 10Z" stroke="#f59e0b" stroke-width="2" stroke-linejoin="round"/>
+      </svg>
+      <h3>Threshold Alerts</h3>
+      <p>Set signal thresholds. Get notified instantly when battery temp, SoC, or motor current exceeds limits.</p>
+    </div>
+
+    <div class="fp-feature-card fp-soon fp-animate">
+      <div class="fp-badge-soon">Coming Soon</div>
+      <svg class="fp-feature-icon" viewBox="0 0 44 44" fill="none">
+        <rect width="44" height="44" rx="8" fill="rgba(245,158,11,0.08)"/>
+        <circle cx="22" cy="20" r="8" stroke="#f59e0b" stroke-width="2"/>
+        <path d="M16 34C16 31 18.686 29 22 29C25.314 29 28 31 28 34" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+        <path d="M30 16 L35 11 M30 24 L35 29" stroke="rgba(245,158,11,0.5)" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <h3>AI Diagnostics</h3>
+      <p>LLM-powered fault analysis. Describe symptoms in plain English, get CAN-signal-backed root cause reports.</p>
+    </div>
+
+    <div class="fp-feature-card fp-soon fp-animate">
+      <div class="fp-badge-soon">Coming Soon</div>
+      <svg class="fp-feature-icon" viewBox="0 0 44 44" fill="none">
+        <rect width="44" height="44" rx="8" fill="rgba(245,158,11,0.08)"/>
+        <rect x="10" y="10" width="24" height="30" rx="3" stroke="#f59e0b" stroke-width="2"/>
+        <line x1="15" y1="18" x2="29" y2="18" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="15" y1="23" x2="29" y2="23" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="15" y1="28" x2="23" y2="28" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <h3>Compliance Reports</h3>
+      <p>FTA-ready exports, audit trails, and automated PDF reports for fleet certification and lease agreements.</p>
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function() {
+  var cards = document.querySelectorAll('#fp-features .fp-animate');
+  if (!cards.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry, i) {
+      if (entry.isIntersecting) {
+        setTimeout(function() {
+          entry.target.classList.add('fp-visible');
+        }, i * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  cards.forEach(function(c) { observer.observe(c); });
+})();
+</script>
+<!-- architecture-section.html -->
+<style>
+#fp-arch {
+  font-family: 'TacticSans', Arial, sans-serif;
+  background: #0a0f1a;
+  color: #ffffff;
+  padding: 90px 20px;
+}
+#fp-arch .fp-section-label {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #00d4aa;
+  margin-bottom: 14px;
+}
+#fp-arch h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  color: #ffffff;
+}
+#fp-arch .fp-section-sub {
+  text-align: center;
+  color: rgba(255,255,255,0.55);
+  font-size: 16px;
+  max-width: 560px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+.fp-arch-wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+  background: #0f172a;
+  border-radius: 12px;
+  border: 1px solid rgba(0,212,170,0.15);
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+.fp-arch-wrapper svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.fp-arch-pills {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 36px;
+}
+.fp-arch-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.75);
+}
+.fp-arch-pill-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  #fp-arch { padding: 60px 20px; }
+  #fp-arch h2 { font-size: 26px; }
+  .fp-arch-pills { gap: 10px; }
+  .fp-arch-pill { font-size: 12px; padding: 6px 14px; }
+}
+</style>
+
+<section id="fp-arch">
+  <div class="fp-section-label">Architecture</div>
+  <h2>Production-Grade Architecture</h2>
+  <p class="fp-section-sub">Serverless. Scales from 5 vehicles to 5,000. Deploys in one command with AWS CDK.</p>
+
+  <div class="fp-arch-wrapper">
+    <!-- INLINE SVG — architecture-diagram.svg content embedded here -->
+    <svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+      <rect width="1200" height="600" fill="#0f172a"/>
+      <rect x="20" y="20" width="260" height="560" rx="12" fill="none" stroke="rgba(59,130,246,0.25)" stroke-width="1.5" stroke-dasharray="6 3"/>
+      <text x="150" y="50" text-anchor="middle" fill="rgba(59,130,246,0.7)" font-size="12" letter-spacing="2" font-weight="600">VEHICLE EDGE</text>
+      <rect x="310" y="20" width="750" height="560" rx="12" fill="none" stroke="rgba(245,158,11,0.25)" stroke-width="1.5" stroke-dasharray="6 3"/>
+      <text x="685" y="50" text-anchor="middle" fill="rgba(245,158,11,0.7)" font-size="12" letter-spacing="2" font-weight="600">AWS CLOUD</text>
+      <rect x="1090" y="20" width="90" height="560" rx="12" fill="none" stroke="rgba(0,212,170,0.25)" stroke-width="1.5" stroke-dasharray="6 3"/>
+      <text x="1135" y="50" text-anchor="middle" fill="rgba(0,212,170,0.7)" font-size="12" letter-spacing="2" font-weight="600">UI</text>
+      <g transform="translate(30, 120)"><rect width="110" height="60" rx="8" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2"/><text x="55" y="22" text-anchor="middle" fill="#93c5fd" font-size="10" font-weight="600">CAN BUS</text><text x="55" y="38" text-anchor="middle" fill="rgba(147,197,253,0.7)" font-size="9">2.0A/2.0B</text><text x="55" y="52" text-anchor="middle" fill="rgba(147,197,253,0.7)" font-size="9">J1939 / UDS</text></g>
+      <g transform="translate(30, 260)"><rect width="240" height="80" rx="8" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2"/><text x="120" y="22" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="700">EDGE AGENT</text><text x="120" y="38" text-anchor="middle" fill="rgba(147,197,253,0.75)" font-size="9">Raspberry Pi 4/5 + CAN HAT</text><text x="120" y="52" text-anchor="middle" fill="rgba(147,197,253,0.65)" font-size="9">python-can · cantools · pyarrow</text><text x="120" y="66" text-anchor="middle" fill="rgba(147,197,253,0.65)" font-size="9">Parquet (zstd) · Offline Buffer</text></g>
+      <line x1="85" y1="180" x2="85" y2="258" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr-blue2)"/>
+      <line x1="272" y1="300" x2="330" y2="300" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr-blue2)"/>
+      <g transform="translate(330, 270)"><rect width="130" height="60" rx="8" fill="#2d1e00" stroke="#f59e0b" stroke-width="2"/><text x="65" y="22" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="700">S3 — RAW</text><text x="65" y="38" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">Hive-partitioned</text><text x="65" y="52" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">year/month/day/vehicle</text></g>
+      <line x1="460" y1="300" x2="510" y2="300" stroke="#f59e0b" stroke-width="2" marker-end="url(#arr-amber2)"/>
+      <g transform="translate(510, 270)"><rect width="130" height="60" rx="8" fill="#2d1e00" stroke="#f59e0b" stroke-width="2"/><text x="65" y="22" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="700">LAMBDA</text><text x="65" y="38" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">DBC Decoder</text><text x="65" y="52" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">S3 trigger · serverless</text></g>
+      <line x1="640" y1="300" x2="690" y2="300" stroke="#f59e0b" stroke-width="2" marker-end="url(#arr-amber2)"/>
+      <g transform="translate(690, 270)"><rect width="130" height="60" rx="8" fill="#2d1e00" stroke="#f59e0b" stroke-width="2"/><text x="65" y="22" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="700">S3 — DECODED</text><text x="65" y="38" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">Parquet (clean)</text><text x="65" y="52" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">human-readable signals</text></g>
+      <line x1="755" y1="270" x2="755" y2="200" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arr-amber-sm2)"/>
+      <g transform="translate(690, 140)"><rect width="130" height="55" rx="8" fill="#2d1e00" stroke="rgba(245,158,11,0.6)" stroke-width="1.5"/><text x="65" y="22" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="700">AWS GLUE</text><text x="65" y="38" text-anchor="middle" fill="rgba(252,211,77,0.65)" font-size="9">Data Catalog</text><text x="65" y="51" text-anchor="middle" fill="rgba(252,211,77,0.65)" font-size="9">Schema registry</text></g>
+      <line x1="690" y1="167" x2="640" y2="167" stroke="rgba(245,158,11,0.5)" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arr-amber-sm2)"/>
+      <g transform="translate(510, 140)"><rect width="130" height="55" rx="8" fill="#2d1e00" stroke="#f59e0b" stroke-width="2"/><text x="65" y="22" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="700">AMAZON ATHENA</text><text x="65" y="38" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">SQL query engine</text><text x="65" y="51" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">serverless · pay-per-query</text></g>
+      <line x1="510" y1="167" x2="460" y2="167" stroke="#f59e0b" stroke-width="2" marker-end="url(#arr-amber2)"/>
+      <g transform="translate(330, 140)"><rect width="130" height="55" rx="8" fill="#2d1e00" stroke="#f59e0b" stroke-width="2"/><text x="65" y="20" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="700">API GATEWAY</text><text x="65" y="34" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">FastAPI + Lambda</text><text x="65" y="48" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">LTTB downsampling</text></g>
+      <line x1="460" y1="167" x2="1090" y2="280" stroke="rgba(0,212,170,0.6)" stroke-width="2" marker-end="url(#arr-teal2)"/>
+      <g transform="translate(330, 430)"><rect width="130" height="50" rx="8" fill="#162020" stroke="rgba(0,212,170,0.4)" stroke-width="1.5"/><text x="65" y="20" text-anchor="middle" fill="#6ee7d4" font-size="10" font-weight="600">AWS COGNITO</text><text x="65" y="34" text-anchor="middle" fill="rgba(110,231,212,0.65)" font-size="9">JWT Auth · User Pools</text><text x="65" y="47" text-anchor="middle" fill="rgba(110,231,212,0.65)" font-size="9">dashboard access control</text></g>
+      <line x1="460" y1="455" x2="1090" y2="380" stroke="rgba(0,212,170,0.35)" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#arr-teal-sm2)"/>
+      <g transform="translate(1095, 255)"><rect width="75" height="90" rx="8" fill="#0d2620" stroke="#00d4aa" stroke-width="2"/><text x="37" y="20" text-anchor="middle" fill="#00d4aa" font-size="9" font-weight="700">REACT</text><text x="37" y="32" text-anchor="middle" fill="#00d4aa" font-size="9" font-weight="700">DASHBOARD</text><text x="37" y="48" text-anchor="middle" fill="rgba(0,212,170,0.65)" font-size="8">TS 5.8</text><text x="37" y="60" text-anchor="middle" fill="rgba(0,212,170,0.65)" font-size="8">Plotly.js</text><text x="37" y="72" text-anchor="middle" fill="rgba(0,212,170,0.65)" font-size="8">AWS CDK</text><text x="37" y="84" text-anchor="middle" fill="rgba(0,212,170,0.65)" font-size="8">deploy</text></g>
+      <text x="600" y="520" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-size="16" font-weight="700" letter-spacing="1">FleetPulse — Production Architecture</text>
+      <text x="600" y="542" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="11">CAN Bus → Edge → AWS Serverless → React Dashboard</text>
+      <rect x="350" y="475" width="12" height="12" rx="2" fill="#3b82f6"/><text x="368" y="486" fill="rgba(255,255,255,0.65)" font-size="11">Vehicle Edge</text>
+      <rect x="460" y="475" width="12" height="12" rx="2" fill="#f59e0b"/><text x="478" y="486" fill="rgba(255,255,255,0.65)" font-size="11">AWS Cloud</text>
+      <rect x="560" y="475" width="12" height="12" rx="2" fill="#00d4aa"/><text x="578" y="486" fill="rgba(255,255,255,0.65)" font-size="11">Frontend</text>
+      <defs>
+        <marker id="arr-blue2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/></marker>
+        <marker id="arr-amber2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#f59e0b"/></marker>
+        <marker id="arr-amber-sm2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="rgba(245,158,11,0.6)"/></marker>
+        <marker id="arr-teal2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="rgba(0,212,170,0.8)"/></marker>
+        <marker id="arr-teal-sm2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="rgba(0,212,170,0.5)"/></marker>
+      </defs>
+    </svg>
+  </div>
+
+  <div class="fp-arch-pills">
+    <div class="fp-arch-pill"><div class="fp-arch-pill-dot" style="background:#3b82f6"></div>Raspberry Pi 4/5 Edge</div>
+    <div class="fp-arch-pill"><div class="fp-arch-pill-dot" style="background:#f59e0b"></div>AWS Serverless (S3 + Lambda + Athena)</div>
+    <div class="fp-arch-pill"><div class="fp-arch-pill-dot" style="background:#00d4aa"></div>React 19 Dashboard</div>
+    <div class="fp-arch-pill"><div class="fp-arch-pill-dot" style="background:#a855f7"></div>1-Command CDK Deploy</div>
+  </div>
+</section>
+<!-- use-cases-section.html -->
+<style>
+#fp-usecases {
+  font-family: 'TacticSans', Arial, sans-serif;
+  background: #000;
+  color: #ffffff;
+  padding: 90px 20px;
+}
+#fp-usecases .fp-section-label {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #009dc9;
+  margin-bottom: 14px;
+}
+#fp-usecases h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+#fp-usecases .fp-section-sub {
+  text-align: center;
+  color: rgba(255,255,255,0.55);
+  font-size: 16px;
+  max-width: 520px;
+  margin: 0 auto 48px;
+  line-height: 1.6;
+}
+.fp-tabs-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  border-bottom: 2px solid rgba(255,255,255,0.1);
+}
+.fp-tab-btn {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.5);
+  font-family: 'TacticSans', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 14px 28px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.fp-tab-btn:hover { color: rgba(255,255,255,0.8); }
+.fp-tab-btn.active {
+  color: #00d4aa;
+  border-bottom-color: #00d4aa;
+}
+.fp-tab-panel {
+  display: none;
+  max-width: 1000px;
+  margin: 0 auto;
+  animation: fp-tab-in 0.3s ease;
+}
+.fp-tab-panel.active { display: block; }
+@keyframes fp-tab-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fp-uc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.fp-uc-content h3 {
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 16px;
+}
+.fp-uc-content p {
+  font-size: 15px;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.7;
+  margin: 0 0 24px;
+}
+.fp-uc-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.fp-uc-metric {
+  background: rgba(0,212,170,0.07);
+  border: 1px solid rgba(0,212,170,0.2);
+  border-radius: 8px;
+  padding: 16px;
+}
+.fp-uc-metric-val {
+  font-size: 24px;
+  font-weight: 700;
+  color: #00d4aa;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.fp-uc-metric-label {
+  font-size: 12px;
+  color: rgba(255,255,255,0.55);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.fp-uc-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+}
+.fp-uc-features li {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.fp-uc-features li::before {
+  content: '✓';
+  color: #00d4aa;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 0;
+}
+/* Screenshot placeholder */
+.fp-screenshot-placeholder {
+  background: #111827;
+  border: 1px solid rgba(0,212,170,0.2);
+  border-radius: 10px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: rgba(255,255,255,0.3);
+  font-size: 13px;
+  text-align: center;
+  padding: 20px;
+}
+/* CTA button */
+.fp-uc-cta {
+  display: inline-block;
+  background: #00d4aa;
+  color: #0a0f1a;
+  font-family: 'TacticSans', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 13px 32px;
+  border-radius: 7px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+.fp-uc-cta:hover { background: #00eaff; transform: translateY(-2px); }
+@media (max-width: 768px) {
+  #fp-usecases { padding: 60px 20px; }
+  #fp-usecases h2 { font-size: 26px; }
+  .fp-tabs-nav { flex-direction: column; border-bottom: none; gap: 2px; }
+  .fp-tab-btn { border-bottom: none; border-left: 3px solid transparent; text-align: left; }
+  .fp-tab-btn.active { border-left-color: #00d4aa; border-bottom: none; }
+  .fp-uc-grid { grid-template-columns: 1fr; }
+  .fp-uc-metrics { grid-template-columns: 1fr 1fr; }
+}
+</style>
+
+<section id="fp-usecases">
+  <div class="fp-section-label">Use Cases</div>
+  <h2>Built for Every Fleet Type</h2>
+  <p class="fp-section-sub">From private logistics to public transit — FleetPulse adapts to your operational reality.</p>
+
+  <div class="fp-tabs-nav">
+    <button class="fp-tab-btn active" data-tab="fleet">Fleet Operators</button>
+    <button class="fp-tab-btn" data-tab="transit">Municipal Transit</button>
+    <button class="fp-tab-btn" data-tab="rental">Rental &amp; Leasing</button>
+  </div>
+
+  <!-- Tab 1: Fleet Operators -->
+  <div class="fp-tab-panel active" id="fp-tab-fleet">
+    <div class="fp-uc-grid">
+      <div class="fp-uc-content">
+        <h3>Fleet Operators</h3>
+        <p>Eliminate reactive maintenance. FleetPulse gives your ops team real-time visibility into battery SoC, motor temperatures, and drivetrain health — before vehicles go offline.</p>
+        <div class="fp-uc-metrics">
+          <div class="fp-uc-metric">
+            <div class="fp-uc-metric-val">40%</div>
+            <div class="fp-uc-metric-label">Downtime reduction</div>
+          </div>
+          <div class="fp-uc-metric">
+            <div class="fp-uc-metric-val">$1.5K</div>
+            <div class="fp-uc-metric-label">Avg cost/day avoided</div>
+          </div>
+          <div class="fp-uc-metric">
+            <div class="fp-uc-metric-val">&lt;1 hr</div>
+            <div class="fp-uc-metric-label">Install per vehicle</div>
+          </div>
+          <div class="fp-uc-metric">
+            <div class="fp-uc-metric-val">∞</div>
+            <div class="fp-uc-metric-label">Signals per vehicle</div>
+          </div>
+        </div>
+        <ul class="fp-uc-features">
+          <li>Real-time battery state of charge and health per vehicle</li>
+          <li>Motor controller thermal monitoring with alert thresholds</li>
+          <li>Historical trend analysis for predictive maintenance scheduling</li>
+          <li>Multi-vehicle dashboard — your whole fleet in one view</li>
+          <li>CAN signal export for your maintenance software</li>
+        </ul>
+        <a href="#fp-cta" class="fp-uc-cta">Start a Pilot</a>
+      </div>
+      <div>
+        <!-- INSERT: Dashboard screenshot showing fleet overview with battery SoC graph -->
+        <div class="fp-screenshot-placeholder">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect width="48" height="48" rx="8" fill="rgba(0,212,170,0.1)"/><rect x="8" y="14" width="32" height="22" rx="3" stroke="#00d4aa" stroke-width="2"/><path d="M14 28 L18 22 L22 26 L26 18 L30 23 L34 20" stroke="#00d4aa" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <span>Dashboard screenshot<br>Fleet overview · Battery SoC trends</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab 2: Municipal Transit -->
+  <div class="fp-tab-panel" id="fp-tab-transit">
+    <div class="fp-uc-grid">
+      <div class="fp-uc-content">
+        <h3>Municipal Transit</h3>
+        <p>Multi-OEM fleets. Compliance requirements. Public accountability. FleetPulse handles mixed-manufacturer CAN protocols and generates FTA-ready audit reports automatically.</p>
+        <div class="fp-uc-metrics">
+          <div class="fp-uc-metric">
+            <div class="fp-uc-metric-val">Multi-OEM</div>
+            <div class="fp-uc-metric-label">Mixed fleet support</div>
+          </div>
+          <div class="fp-uc-metric">
+            <div class="fp-uc-metric-val">FTA</div>
+            <div class="fp-uc-metric-label">Ready exports</div>
+          </div>
+          <div class="fp-uc-metric">
+            <div class="fp-uc-metric-val">365d</div>
+            <div class="fp-uc-metric-label">Audit trail retention</div>
+          </div>
+          <div class="fp-uc-metric">
+            <div class="fp-uc-metric-val">SQL</div>
+            <div class="fp-uc-metric-label">Queryable history</div>
+          </div>
+        </div>
+        <ul class="fp-uc-features">
+          <li>Multi-OEM DBC library — one platform for all vehicle types</li>
+          <li>FTA grant compliance reports generated automatically</li>
+          <li>Immutable audit trail via S3 versioning</li>
+          <li>Per-route energy consumption analysis</li>
+          <li>Driver behavior correlation with battery degradation</li>
+        </ul>
+        <a href="#fp-cta" class="fp-uc-cta">Request Municipal Demo</a>
+      </div>
+      <div>
+        <!-- INSERT: Screenshot showing multi-OEM fleet comparison dashboard -->
+        <div class="fp-screenshot-placeholder">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect width="48" height="48" rx="8" fill="rgba(0,157,201,0.1)"/><path d="M12 36V20L20 14L28 20L36 14V36" stroke="#009dc9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Dashboard screenshot<br>Multi-OEM fleet · Compliance view</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab 3: Rental & Leasing -->
+  <div class="fp-tab-panel" id="fp-tab-rental">
+    <div class="fp-uc-grid">
+      <div class="fp-uc-content">
+        <h3>Rental &amp; Leasing</h3>
+        <p>Know the true condition of every vehicle before and after each rental. Document battery degradation, detect abuse patterns, and generate accurate condition reports from raw CAN data.</p>
+        <div class="fp-uc-metrics">
+          <div class="fp-uc-metric">
+            <div class="fp-uc-metric-val">SoH</div>
+            <div class="fp-uc-metric-label">Battery state-of-health</div>
+          </div>
+          <div class="fp-uc-metric">
+            <div class="fp-uc-metric-val">Auto</div>
+            <div class="fp-uc-metric-label">Condition reports</div>
+          </div>
+          <div class="fp-uc-metric">
+            <div class="fp-uc-metric-val">Live</div>
+            <div class="fp-uc-metric-label">Abuse detection</div>
+          </div>
+          <div class="fp-uc-metric">
+            <div class="fp-uc-metric-val">Per-VIN</div>
+            <div class="fp-uc-metric-label">Historical records</div>
+          </div>
+        </div>
+        <ul class="fp-uc-features">
+          <li>Battery SoH trending — detect degradation early, before returns</li>
+          <li>Rapid acceleration and regen abuse pattern detection</li>
+          <li>Per-rental session CAN snapshots for dispute resolution</li>
+          <li>Lease-end condition reports backed by raw vehicle data</li>
+          <li>Integration-ready API for your fleet management software</li>
+        </ul>
+        <a href="#fp-cta" class="fp-uc-cta">See a Live Demo</a>
+      </div>
+      <div>
+        <!-- INSERT: Screenshot showing vehicle condition report / battery health trend -->
+        <div class="fp-screenshot-placeholder">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect width="48" height="48" rx="8" fill="rgba(0,212,170,0.1)"/><rect x="10" y="20" width="28" height="16" rx="3" stroke="#00d4aa" stroke-width="2"/><rect x="38" y="24" width="4" height="8" rx="1" fill="#00d4aa"/><line x1="16" y1="28" x2="30" y2="28" stroke="#00d4aa" stroke-width="2" stroke-linecap="round"/><line x1="16" y1="28" x2="26" y2="28" stroke="#0a0f1a" stroke-width="2" stroke-linecap="round"/></svg>
+          <span>Dashboard screenshot<br>Battery health trend · Condition report</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  var btns = document.querySelectorAll('#fp-usecases .fp-tab-btn');
+  var panels = document.querySelectorAll('#fp-usecases .fp-tab-panel');
+  btns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var tab = btn.dataset.tab;
+      btns.forEach(function(b) { b.classList.remove('active'); });
+      panels.forEach(function(p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      var panel = document.getElementById('fp-tab-' + tab);
+      if (panel) panel.classList.add('active');
+    });
+  });
+})();
+</script>
+<!-- tech-specs-section.html -->
+<style>
+#fp-specs {
+  font-family: 'TacticSans', Arial, sans-serif;
+  background: #ebebeb;
+  color: #000000;
+  padding: 90px 20px;
+}
+#fp-specs .fp-section-label {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #009dc9;
+  margin-bottom: 14px;
+}
+#fp-specs h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  color: #000;
+}
+#fp-specs .fp-section-sub {
+  text-align: center;
+  color: rgba(0,0,0,0.5);
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+.fp-specs-table {
+  max-width: 860px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+.fp-spec-row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  opacity: 0;
+  transform: translateX(-12px);
+}
+.fp-spec-row.fp-visible {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.fp-spec-row:last-child { border-bottom: none; }
+.fp-spec-row:nth-child(even) .fp-spec-label,
+.fp-spec-row:nth-child(even) .fp-spec-value {
+  background: rgba(0,157,201,0.04);
+}
+.fp-spec-label {
+  background: #ffffff;
+  padding: 16px 24px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  border-right: 1px solid rgba(0,0,0,0.07);
+}
+.fp-spec-value {
+  background: #ffffff;
+  padding: 16px 24px;
+  font-size: 14px;
+  font-family: 'Courier New', 'Consolas', monospace;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.fp-spec-tag {
+  display: inline-block;
+  background: rgba(0,157,201,0.1);
+  color: #009dc9;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-family: 'Courier New', monospace;
+  white-space: nowrap;
+}
+.fp-spec-tag-green {
+  background: rgba(0,212,170,0.1);
+  color: #00796b;
+}
+@media (max-width: 768px) {
+  #fp-specs { padding: 60px 20px; }
+  #fp-specs h2 { font-size: 26px; }
+  .fp-spec-row { grid-template-columns: 1fr; }
+  .fp-spec-label {
+    border-right: none;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    padding: 12px 20px 8px;
+    font-size: 12px;
+  }
+  .fp-spec-value { padding: 8px 20px 14px; }
+}
+</style>
+
+<section id="fp-specs">
+  <div class="fp-section-label">Technical Specifications</div>
+  <h2>Built on Battle-Tested Open Standards</h2>
+  <p class="fp-section-sub">No proprietary lock-in. Every component is replaceable, auditable, and yours.</p>
+
+  <div class="fp-specs-table">
+
+    <div class="fp-spec-row fp-animate">
+      <div class="fp-spec-label">Edge Hardware</div>
+      <div class="fp-spec-value">
+        <span class="fp-spec-tag">Raspberry Pi 4/5</span>
+        <span class="fp-spec-tag">CAN HAT (MCP2515)</span>
+        <span class="fp-spec-tag">OBD-II adapter</span>
+      </div>
+    </div>
+
+    <div class="fp-spec-row fp-animate">
+      <div class="fp-spec-label">Edge Software</div>
+      <div class="fp-spec-value">
+        <span class="fp-spec-tag">Python 3.12+</span>
+        <span class="fp-spec-tag">python-can</span>
+        <span class="fp-spec-tag">cantools</span>
+        <span class="fp-spec-tag">pyarrow</span>
+      </div>
+    </div>
+
+    <div class="fp-spec-row fp-animate">
+      <div class="fp-spec-label">Data Format</div>
+      <div class="fp-spec-value">
+        <span class="fp-spec-tag fp-spec-tag-green">Apache Parquet</span>
+        <span class="fp-spec-tag">zstd compression</span>
+        <span class="fp-spec-tag">Hive partitioning</span>
+      </div>
+    </div>
+
+    <div class="fp-spec-row fp-animate">
+      <div class="fp-spec-label">Cloud Storage</div>
+      <div class="fp-spec-value">
+        <span class="fp-spec-tag">AWS S3</span>
+        <span class="fp-spec-tag">year/month/day/vehicle</span>
+        <span class="fp-spec-tag">versioning enabled</span>
+      </div>
+    </div>
+
+    <div class="fp-spec-row fp-animate">
+      <div class="fp-spec-label">Processing</div>
+      <div class="fp-spec-value">
+        <span class="fp-spec-tag">AWS Lambda</span>
+        <span class="fp-spec-tag">S3 event trigger</span>
+        <span class="fp-spec-tag">serverless · auto-scale</span>
+      </div>
+    </div>
+
+    <div class="fp-spec-row fp-animate">
+      <div class="fp-spec-label">Query Engine</div>
+      <div class="fp-spec-value">
+        <span class="fp-spec-tag fp-spec-tag-green">Amazon Athena</span>
+        <span class="fp-spec-tag">standard SQL</span>
+        <span class="fp-spec-tag">pay-per-query</span>
+      </div>
+    </div>
+
+    <div class="fp-spec-row fp-animate">
+      <div class="fp-spec-label">API Layer</div>
+      <div class="fp-spec-value">
+        <span class="fp-spec-tag">FastAPI</span>
+        <span class="fp-spec-tag">API Gateway</span>
+        <span class="fp-spec-tag">LTTB downsampling</span>
+      </div>
+    </div>
+
+    <div class="fp-spec-row fp-animate">
+      <div class="fp-spec-label">Frontend</div>
+      <div class="fp-spec-value">
+        <span class="fp-spec-tag fp-spec-tag-green">React 19</span>
+        <span class="fp-spec-tag">TypeScript 5.8</span>
+        <span class="fp-spec-tag">Plotly.js</span>
+      </div>
+    </div>
+
+    <div class="fp-spec-row fp-animate">
+      <div class="fp-spec-label">Authentication</div>
+      <div class="fp-spec-value">
+        <span class="fp-spec-tag">AWS Cognito</span>
+        <span class="fp-spec-tag">JWT tokens</span>
+        <span class="fp-spec-tag">User Pools</span>
+      </div>
+    </div>
+
+    <div class="fp-spec-row fp-animate">
+      <div class="fp-spec-label">Infrastructure</div>
+      <div class="fp-spec-value">
+        <span class="fp-spec-tag fp-spec-tag-green">AWS CDK</span>
+        <span class="fp-spec-tag">1-command deploy</span>
+        <span class="fp-spec-tag">your AWS account</span>
+      </div>
+    </div>
+
+    <div class="fp-spec-row fp-animate">
+      <div class="fp-spec-label">CAN Protocols</div>
+      <div class="fp-spec-value">
+        <span class="fp-spec-tag">CAN 2.0A / 2.0B</span>
+        <span class="fp-spec-tag">J1939</span>
+        <span class="fp-spec-tag">UDS (ISO 14229)</span>
+        <span class="fp-spec-tag">DBC files</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function() {
+  var rows = document.querySelectorAll('#fp-specs .fp-animate');
+  if (!rows.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry, i) {
+      if (entry.isIntersecting) {
+        setTimeout(function() {
+          entry.target.classList.add('fp-visible');
+        }, i * 60);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.05 });
+  rows.forEach(function(r) { observer.observe(r); });
+})();
+</script>
+<!-- pricing-section.html -->
+<style>
+#fp-pricing {
+  font-family: 'TacticSans', Arial, sans-serif;
+  background: #111;
+  color: #ffffff;
+  padding: 90px 20px;
+}
+#fp-pricing .fp-section-label {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #00d4aa;
+  margin-bottom: 14px;
+}
+#fp-pricing h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  color: #ffffff;
+}
+#fp-pricing .fp-section-sub {
+  text-align: center;
+  color: rgba(255,255,255,0.55);
+  font-size: 16px;
+  max-width: 520px;
+  margin: 0 auto 56px;
+  line-height: 1.6;
+}
+.fp-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+.fp-plan-card {
+  background: #111827;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 36px 30px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(20px);
+  position: relative;
+}
+.fp-plan-card.fp-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fp-plan-card.fp-popular {
+  border-color: #00d4aa;
+  box-shadow: 0 0 0 1px #00d4aa, 0 16px 48px rgba(0,212,170,0.15);
+}
+.fp-popular-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #00d4aa;
+  color: #0a0f1a;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 5px 16px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+.fp-plan-name {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+.fp-plan-tagline {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+.fp-plan-price {
+  font-size: 28px;
+  font-weight: 700;
+  color: #00d4aa;
+  margin-bottom: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.fp-plan-price span {
+  font-size: 14px;
+  color: rgba(255,255,255,0.45);
+  font-weight: 400;
+}
+.fp-plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+  flex: 1;
+}
+.fp-plan-features li {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  padding: 9px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.fp-plan-features li::before {
+  content: '✓';
+  color: #00d4aa;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.fp-plan-features li.fp-dimmed { color: rgba(255,255,255,0.35); }
+.fp-plan-features li.fp-dimmed::before { color: rgba(255,255,255,0.2); content: '—'; }
+.fp-plan-cta {
+  display: block;
+  text-align: center;
+  background: transparent;
+  color: #00d4aa;
+  font-family: 'TacticSans', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 13px 28px;
+  border-radius: 7px;
+  border: 1.5px solid #00d4aa;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.fp-plan-cta:hover { background: #00d4aa; color: #0a0f1a; }
+.fp-popular .fp-plan-cta {
+  background: #00d4aa;
+  color: #0a0f1a;
+}
+.fp-popular .fp-plan-cta:hover { background: #00eaff; }
+@media (max-width: 1024px) { .fp-pricing-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 768px) {
+  #fp-pricing { padding: 60px 20px; }
+  #fp-pricing h2 { font-size: 26px; }
+  .fp-pricing-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<section id="fp-pricing">
+  <div class="fp-section-label">Pricing</div>
+  <h2>Transparent, Ownership-First Pricing</h2>
+  <p class="fp-section-sub">No per-vehicle-per-month surprises. Deploy in your AWS account — costs scale with your cloud bill, not ours.</p>
+
+  <div class="fp-pricing-grid">
+
+    <!-- Pilot -->
+    <div class="fp-plan-card fp-animate">
+      <div class="fp-plan-name">Pilot</div>
+      <div class="fp-plan-tagline">Prove the value. Zero long-term commitment.</div>
+      <div class="fp-plan-price">Contact Us <span>/ custom</span></div>
+      <ul class="fp-plan-features">
+        <li>Up to 10 vehicles</li>
+        <li>90-day data retention</li>
+        <li>3 dashboard users</li>
+        <li>1 DBC file</li>
+        <li>Email support</li>
+        <li>AWS CDK deployment guide</li>
+        <li class="fp-dimmed">Priority support</li>
+        <li class="fp-dimmed">AI chatbot diagnostics</li>
+        <li class="fp-dimmed">On-prem option</li>
+      </ul>
+      <a href="#fp-cta" class="fp-plan-cta">Contact Us</a>
+    </div>
+
+    <!-- Growth (Most Popular) -->
+    <div class="fp-plan-card fp-popular fp-animate">
+      <div class="fp-popular-badge">Most Popular</div>
+      <div class="fp-plan-name">Growth</div>
+      <div class="fp-plan-tagline">Scale your intelligence across your full fleet.</div>
+      <div class="fp-plan-price">Contact Us <span>/ custom</span></div>
+      <ul class="fp-plan-features">
+        <li>Up to 100 vehicles</li>
+        <li>1-year data retention</li>
+        <li>15 dashboard users</li>
+        <li>5 DBC files</li>
+        <li>Priority support (SLA)</li>
+        <li>AWS CDK deployment + onboarding</li>
+        <li>AI chatbot diagnostics (beta)</li>
+        <li class="fp-dimmed">On-prem option</li>
+        <li class="fp-dimmed">Dedicated account manager</li>
+      </ul>
+      <a href="#fp-cta" class="fp-plan-cta">Contact Us</a>
+    </div>
+
+    <!-- Enterprise -->
+    <div class="fp-plan-card fp-animate">
+      <div class="fp-plan-name">Enterprise</div>
+      <div class="fp-plan-tagline">Unlimited scale. On-prem option. White-glove support.</div>
+      <div class="fp-plan-price">Contact Us <span>/ custom</span></div>
+      <ul class="fp-plan-features">
+        <li>Unlimited vehicles</li>
+        <li>Custom data retention</li>
+        <li>Unlimited users</li>
+        <li>Unlimited DBC files</li>
+        <li>Dedicated support + SLA</li>
+        <li>On-premises deployment option</li>
+        <li>Custom integrations (API)</li>
+        <li>Dedicated account manager</li>
+        <li>AI diagnostics + compliance reports</li>
+      </ul>
+      <a href="#fp-cta" class="fp-plan-cta">Contact Us</a>
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function() {
+  var cards = document.querySelectorAll('#fp-pricing .fp-animate');
+  if (!cards.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry, i) {
+      if (entry.isIntersecting) {
+        setTimeout(function() { entry.target.classList.add('fp-visible'); }, i * 120);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  cards.forEach(function(c) { observer.observe(c); });
+})();
+</script>
+<!-- cta-section.html -->
+<style>
+#fp-cta {
+  font-family: 'TacticSans', Arial, sans-serif;
+  background: #0a0f1a;
+  color: #ffffff;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+#fp-cta::before {
+  content: '';
+  position: absolute;
+  bottom: -60%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 900px;
+  background: radial-gradient(circle, rgba(0,157,201,0.12) 0%, transparent 60%);
+  pointer-events: none;
+}
+#fp-cta::after {
+  content: '';
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(0,212,170,0.07) 0%, transparent 60%);
+  pointer-events: none;
+}
+.fp-cta-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.fp-cta-eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #00d4aa;
+  border: 1px solid rgba(0,212,170,0.3);
+  border-radius: 20px;
+  padding: 5px 18px;
+  margin-bottom: 28px;
+}
+#fp-cta h2 {
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 18px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+#fp-cta h2 span { color: #00eaff; }
+#fp-cta p {
+  font-size: 17px;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.65;
+  margin: 0 0 44px;
+}
+.fp-cta-btns {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.fp-cta-btn-primary {
+  display: inline-block;
+  background: #009dc9;
+  color: #ffffff;
+  font-family: 'TacticSans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 16px 42px;
+  border-radius: 7px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+.fp-cta-btn-primary:hover { background: #00eaff; color: #000; transform: translateY(-2px); }
+.fp-cta-btn-secondary {
+  display: inline-block;
+  background: transparent;
+  color: #ffffff;
+  font-family: 'TacticSans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 15px 40px;
+  border-radius: 7px;
+  border: 1.5px solid rgba(255,255,255,0.3);
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s, transform 0.2s;
+}
+.fp-cta-btn-secondary:hover { border-color: #00eaff; color: #00eaff; transform: translateY(-2px); }
+.fp-cta-note {
+  margin-top: 28px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.35);
+}
+@media (max-width: 768px) {
+  #fp-cta { padding: 70px 20px; }
+  #fp-cta h2 { font-size: 28px; }
+  #fp-cta p { font-size: 15px; }
+}
+</style>
+
+<section id="fp-cta">
+  <div class="fp-cta-inner">
+    <div class="fp-cta-eyebrow">Get Started</div>
+    <h2>Ready to See <span>FleetPulse</span> in Action?</h2>
+    <p>Book a 30-minute demo. We'll show you live data from a real vehicle — battery state of charge, motor thermals, drivetrain signals — streamed from CAN bus to dashboard.</p>
+    <div class="fp-cta-btns">
+      <a href="https://revelectrik.com/#contactus" class="fp-cta-btn-primary">Book a Demo</a>
+      <a href="https://github.com/subhasisrevelectrik/telemetry-platform" target="_blank" rel="noopener" class="fp-cta-btn-secondary">View Source on GitHub →</a>
+    </div>
+    <div class="fp-cta-note">No commitment. We'll bring the vehicle data.</div>
+  </div>
+</section>
+
+</main>
+
+<!--footer--> <footer id="t-footer" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="9022251" data-tilda-page-id="50378057" data-tilda-formskey="49b26ab8669d6d18e0a0d8db99022251" data-tilda-cookie="no" data-tilda-lazy="yes" data-tilda-root-zone="one" data-tilda-project-country="US"> <div id="rec760068180" class="r t-rec t-rec_pt_15 t-rec_pb_0" style="padding-top:15px;padding-bottom:0px;background-color:#009dc9; " data-record-type="463" data-bg-color="#009dc9"> <!-- T463 --> <div class="t463" id="t-footer_760068180"> <div class="t463__maincontainer "> <div class="t463__content" style=""> <div class="t463__colwrapper"> <div class="t463__col"> <a class="t463__link" href="/"> <img class="t463__logo t463__img t-img"
+src="/images/tild6630-3266-4837-b265-616565373637__-__empty__2334new_122.png" data-original="tild6630-3266-4837-b265-616565373637__2334new_122.png"
+imgfield="img"
+alt=""> </a> </div> <div class="t463__col t463__col_center t-align_center"> <div class="t463__typo t463__copyright t-name t-name_xs" field="text"><div style="font-size: 26px;" data-customstyle="yes"><strong style="color: rgb(255, 255, 255);">Phone: +1 (408)477-9526</strong><br /><strong style="color: rgb(255, 255, 255);">Email: <a href="mailto:contact@revelectrik.com" style="color: rgb(255, 255, 255);">contact@revelectrik.com</a></strong><br /><strong style="color: rgb(255, 255, 255);">© 2023 Revelectrik LLC. All rights reserved.</strong></div></div> </div> <div class="t463__col t-align_right"> </div> </div> </div> </div> </div> <style> #rec760068180 .t463__link{font-size:20px;color:#ffffff;font-weight:600;}#rec760068180 .t463__logo{font-size:20px;color:#ffffff;font-weight:600;}#rec760068180 .t463__copyright{color:#ffffff;}</style> </div> </footer> <!--/footer-->
+
+</div>
+<!-- Stat --> <script type="text/javascript">if(!window.mainTracker) {window.mainTracker='tilda';}
+window.tildastatcookie='no';setTimeout(function(){(function(d,w,k,o,g) {var n=d.getElementsByTagName(o)[0],s=d.createElement(o),f=function(){n.parentNode.insertBefore(s,n);};s.type="text/javascript";s.async=true;s.key=k;s.id="tildastatscript";s.src=g;if(w.opera=="[object Opera]") {d.addEventListener("DOMContentLoaded",f,false);} else {f();}})(document,window,'d40a7aa7a8d35c07761b911a1353c374','script','tilda-stat-1.0.min.js');},2000);</script> </body>
+</body>
+</html>
