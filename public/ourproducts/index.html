@@ -102,7 +102,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
   transform: translateY(-5px);
   box-shadow: 0 12px 40px rgba(0,212,170,0.1);
 }
-/* Image placeholder */
+/* Product image area */
 .fp-product-img {
   height: 220px;
   background: linear-gradient(135deg, #0a1628 0%, #0d2030 100%);
@@ -113,17 +113,15 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
   position: relative;
   overflow: hidden;
 }
-.fp-product-img-label {
-  position: absolute;
-  bottom: 12px;
-  left: 12px;
-  font-size: 10px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.3);
-  background: rgba(0,0,0,0.5);
-  padding: 4px 10px;
-  border-radius: 4px;
+.fp-product-img.fp-product-img-white {
+  background: #f5f5f5;
+}
+.fp-product-img.fp-product-img-white img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 .fp-product-body {
   padding: 28px 30px 32px;
@@ -207,17 +205,8 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
 
     <!-- Product 2: FleetPulse -->
     <div class="fp-product-card fp-animate">
-      <div class="fp-product-img">
-        <!-- INSERT: FleetPulse dashboard screenshot or product mockup -->
-        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-          <rect width="80" height="80" rx="12" fill="rgba(0,212,170,0.08)"/>
-          <rect x="12" y="22" width="56" height="36" rx="4" stroke="#00d4aa" stroke-width="2"/>
-          <path d="M20 46 L28 36 L36 40 L44 28 L52 34 L60 30" stroke="#00d4aa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="44" cy="28" r="3" fill="#00d4aa"/>
-          <rect x="25" y="62" width="30" height="4" rx="2" fill="#00d4aa" opacity="0.3"/>
-          <rect x="35" y="58" width="10" height="4" rx="2" fill="#00d4aa" opacity="0.2"/>
-        </svg>
-        <div class="fp-product-img-label">Insert dashboard screenshot</div>
+      <div class="fp-product-img fp-product-img-white">
+        <img src="/images/radar1s-new.png" alt="FleetPulse RADAR 1s edge device - OBD-II CAN bus telemetry hardware" loading="lazy" />
       </div>
       <div class="fp-product-body">
         <div class="fp-product-tag">Data Product</div>
