@@ -195,7 +195,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
 
 <section id="fp-hero">
   <div class="fp-hero-inner">
-    <div class="fp-eyebrow">FleetPulse — CAN Bus Telemetry Platform</div>
+    <div class="fp-eyebrow">FleetPulse - CAN Bus Telemetry Platform</div>
     <h1>Real-Time <span>CAN Bus Telemetry</span><br>for Commercial EV Fleets</h1>
     <p class="fp-sub">From vehicle to cloud dashboard in under an hour. Monitor battery health, motor performance, and drivetrain diagnostics across your entire fleet.</p>
     <div class="fp-hero-btns">
@@ -320,7 +320,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
 <section id="fp-problems">
   <div class="fp-section-label">The Problem</div>
   <h2>Why Fleet Managers Are Flying Blind</h2>
-  <p class="fp-section-sub">Legacy telematics weren't built for electric drivetrains. CAN bus data stays trapped on the vehicle — until it's too late.</p>
+  <p class="fp-section-sub">Legacy telematics weren't built for electric drivetrains. CAN bus data stays trapped on the vehicle - until it's too late.</p>
 
   <div class="fp-problem-grid">
 
@@ -542,7 +542,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
       <div class="fp-step-body">
         <div class="fp-step-time">Step 01</div>
         <h3>Install</h3>
-        <p>LILYGO T-SIM7600G-H ESP32-WROVER edge device connects via OBD-II port or direct CAN tap. Under 1 hour, no vehicle downtime.</p>
+        <p>LILYGO T-SIM7600G-H ESP32 edge device connects via OBD-II port or direct CAN tap. Built-in 4G LTE and GPS are ready out of the box. Under 1 hour, no vehicle downtime.</p>
       </div>
     </div>
 
@@ -554,7 +554,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
       <div class="fp-step-body">
         <div class="fp-step-time">Step 02</div>
         <h3>Capture</h3>
-        <p>CAN frames decoded via DBC files, batched to Apache Parquet, buffered offline with automatic retry.</p>
+        <p>CAN frames decoded via DBC files and streamed over 4G LTE in near real-time. Local buffer ensures zero data loss if connectivity drops.</p>
       </div>
     </div>
 
@@ -566,7 +566,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
       <div class="fp-step-body">
         <div class="fp-step-time">Step 03</div>
         <h3>Stream</h3>
-        <p>Compressed Parquet uploads to your AWS S3 bucket. Lambda auto-decodes on arrival, no manual pipeline.</p>
+        <p>Near real-time CAN data streams to your AWS S3 bucket over 4G LTE. Lambda decodes on arrival - no manual pipeline.</p>
       </div>
     </div>
 
@@ -758,7 +758,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
         <path d="M22 18V30" stroke="#009dc9" stroke-width="1.8" stroke-linecap="round"/>
       </svg>
       <h3>Edge Buffering</h3>
-      <p>Local Parquet storage survives connectivity gaps. Automatic retry queues ensure zero data loss, even offline.</p>
+      <p>Local buffer survives connectivity gaps and tunnel passes. Automatic retry queues ensure zero data loss when 4G signal drops.</p>
     </div>
 
     <!-- Row 2 -->
@@ -770,7 +770,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
         <path d="M34 10L34 22" stroke="#00d4aa" stroke-width="2" stroke-linecap="round"/>
       </svg>
       <h3>Your Data, Your Cloud</h3>
-      <p>Deploys into your own AWS account. S3, Lambda, Athena — you own the infrastructure and every byte of data.</p>
+      <p>Deploys into your own AWS account. S3, Lambda, Athena - you own the infrastructure and every byte of data.</p>
     </div>
 
     <div class="fp-feature-card fp-animate">
@@ -795,7 +795,21 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
       <p>AWS CDK stack. One command deploys the entire platform: S3, Lambda, Athena, API Gateway, Cognito.</p>
     </div>
 
-    <!-- Row 3 — Coming Soon -->
+    <!-- Row 2 cont — GPS -->
+    <div class="fp-feature-card fp-animate">
+      <svg class="fp-feature-icon" viewBox="0 0 44 44" fill="none">
+        <rect width="44" height="44" rx="8" fill="rgba(0,212,170,0.1)"/>
+        <circle cx="22" cy="20" r="7" stroke="#00d4aa" stroke-width="2"/>
+        <circle cx="22" cy="20" r="2.5" fill="#00d4aa"/>
+        <path d="M22 27V36" stroke="#00d4aa" stroke-width="2" stroke-linecap="round"/>
+        <path d="M17 36H27" stroke="#00d4aa" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M15 14C15 10.686 18.134 8 22 8C25.866 8 29 10.686 29 14" stroke="rgba(0,212,170,0.45)" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <h3>GPS Location Tracking</h3>
+      <p>Built-in GPS on the LILYGO ESP32 tracks vehicle location alongside CAN telemetry. Correlate route data with battery performance and motor load in one view.</p>
+    </div>
+
+    <!-- Row 3 - Coming Soon -->
     <div class="fp-feature-card fp-soon fp-animate">
       <div class="fp-badge-soon">Coming Soon</div>
       <svg class="fp-feature-icon" viewBox="0 0 44 44" fill="none">
@@ -840,7 +854,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
         <path d="M30 18l3-3M30 24h4M30 30l3 3" stroke="rgba(245,158,11,0.6)" stroke-width="1.5" stroke-linecap="round"/>
       </svg>
       <h3>AI Predictive Failure Prevention</h3>
-      <p>Machine learning models continuously analyze component health trends, detecting early-stage degradation before it becomes a failure — then trigger proactive maintenance actions to keep your fleet running.</p>
+      <p>Machine learning models continuously analyze component health trends, detecting early-stage degradation before it becomes a failure. Proactive maintenance actions are triggered automatically to keep your fleet running.</p>
     </div>
 
 
@@ -958,14 +972,14 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
       <rect x="1090" y="20" width="90" height="560" rx="12" fill="none" stroke="rgba(0,212,170,0.25)" stroke-width="1.5" stroke-dasharray="6 3"/>
       <text x="1135" y="50" text-anchor="middle" fill="rgba(0,212,170,0.7)" font-size="12" letter-spacing="2" font-weight="600">UI</text>
       <g transform="translate(30, 120)"><rect width="110" height="60" rx="8" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2"/><text x="55" y="22" text-anchor="middle" fill="#93c5fd" font-size="10" font-weight="600">CAN BUS</text><text x="55" y="38" text-anchor="middle" fill="rgba(147,197,253,0.7)" font-size="9">2.0A/2.0B</text><text x="55" y="52" text-anchor="middle" fill="rgba(147,197,253,0.7)" font-size="9">J1939 / UDS</text></g>
-      <g transform="translate(30, 260)"><rect width="240" height="80" rx="8" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2"/><text x="120" y="22" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="700">EDGE AGENT</text><text x="120" y="38" text-anchor="middle" fill="rgba(147,197,253,0.75)" font-size="9">LILYGO T-SIM7600G-H</text><text x="120" y="52" text-anchor="middle" fill="rgba(147,197,253,0.65)" font-size="9">python-can · cantools · pyarrow</text><text x="120" y="66" text-anchor="middle" fill="rgba(147,197,253,0.65)" font-size="9">Parquet (zstd) · Offline Buffer</text></g>
+      <g transform="translate(30, 260)"><rect width="240" height="80" rx="8" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2"/><text x="120" y="22" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="700">EDGE AGENT</text><text x="120" y="38" text-anchor="middle" fill="rgba(147,197,253,0.75)" font-size="9">LILYGO T-SIM7600G-H</text><text x="120" y="52" text-anchor="middle" fill="rgba(147,197,253,0.65)" font-size="9">C++ / Arduino · ESP32 CAN driver</text><text x="120" y="66" text-anchor="middle" fill="rgba(147,197,253,0.65)" font-size="9">4G LTE stream · Local buffer</text></g>
       <line x1="85" y1="180" x2="85" y2="258" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr-blue2)"/>
       <line x1="272" y1="300" x2="330" y2="300" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr-blue2)"/>
-      <g transform="translate(330, 270)"><rect width="130" height="60" rx="8" fill="#2d1e00" stroke="#f59e0b" stroke-width="2"/><text x="65" y="22" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="700">S3 — RAW</text><text x="65" y="38" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">Hive-partitioned</text><text x="65" y="52" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">year/month/day/vehicle</text></g>
+      <g transform="translate(330, 270)"><rect width="130" height="60" rx="8" fill="#2d1e00" stroke="#f59e0b" stroke-width="2"/><text x="65" y="22" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="700">S3 - RAW</text><text x="65" y="38" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">Hive-partitioned</text><text x="65" y="52" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">year/month/day/vehicle</text></g>
       <line x1="460" y1="300" x2="510" y2="300" stroke="#f59e0b" stroke-width="2" marker-end="url(#arr-amber2)"/>
       <g transform="translate(510, 270)"><rect width="130" height="60" rx="8" fill="#2d1e00" stroke="#f59e0b" stroke-width="2"/><text x="65" y="22" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="700">LAMBDA</text><text x="65" y="38" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">DBC Decoder</text><text x="65" y="52" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">S3 trigger · serverless</text></g>
       <line x1="640" y1="300" x2="690" y2="300" stroke="#f59e0b" stroke-width="2" marker-end="url(#arr-amber2)"/>
-      <g transform="translate(690, 270)"><rect width="130" height="60" rx="8" fill="#2d1e00" stroke="#f59e0b" stroke-width="2"/><text x="65" y="22" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="700">S3 — DECODED</text><text x="65" y="38" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">Parquet (clean)</text><text x="65" y="52" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">human-readable signals</text></g>
+      <g transform="translate(690, 270)"><rect width="130" height="60" rx="8" fill="#2d1e00" stroke="#f59e0b" stroke-width="2"/><text x="65" y="22" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="700">S3 - DECODED</text><text x="65" y="38" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">Parquet (clean)</text><text x="65" y="52" text-anchor="middle" fill="rgba(252,211,77,0.7)" font-size="9">human-readable signals</text></g>
       <line x1="755" y1="270" x2="755" y2="200" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arr-amber-sm2)"/>
       <g transform="translate(690, 140)"><rect width="130" height="55" rx="8" fill="#2d1e00" stroke="rgba(245,158,11,0.6)" stroke-width="1.5"/><text x="65" y="22" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="700">AWS GLUE</text><text x="65" y="38" text-anchor="middle" fill="rgba(252,211,77,0.65)" font-size="9">Data Catalog</text><text x="65" y="51" text-anchor="middle" fill="rgba(252,211,77,0.65)" font-size="9">Schema registry</text></g>
       <line x1="690" y1="167" x2="640" y2="167" stroke="rgba(245,158,11,0.5)" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arr-amber-sm2)"/>
@@ -976,7 +990,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
       <g transform="translate(330, 430)"><rect width="130" height="50" rx="8" fill="#162020" stroke="rgba(0,212,170,0.4)" stroke-width="1.5"/><text x="65" y="20" text-anchor="middle" fill="#6ee7d4" font-size="10" font-weight="600">AWS COGNITO</text><text x="65" y="34" text-anchor="middle" fill="rgba(110,231,212,0.65)" font-size="9">JWT Auth · User Pools</text><text x="65" y="47" text-anchor="middle" fill="rgba(110,231,212,0.65)" font-size="9">dashboard access control</text></g>
       <line x1="460" y1="455" x2="1090" y2="380" stroke="rgba(0,212,170,0.35)" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#arr-teal-sm2)"/>
       <g transform="translate(1095, 255)"><rect width="75" height="90" rx="8" fill="#0d2620" stroke="#00d4aa" stroke-width="2"/><text x="37" y="20" text-anchor="middle" fill="#00d4aa" font-size="9" font-weight="700">REACT</text><text x="37" y="32" text-anchor="middle" fill="#00d4aa" font-size="9" font-weight="700">DASHBOARD</text><text x="37" y="48" text-anchor="middle" fill="rgba(0,212,170,0.65)" font-size="8">TS 5.8</text><text x="37" y="60" text-anchor="middle" fill="rgba(0,212,170,0.65)" font-size="8">Plotly.js</text><text x="37" y="72" text-anchor="middle" fill="rgba(0,212,170,0.65)" font-size="8">AWS CDK</text><text x="37" y="84" text-anchor="middle" fill="rgba(0,212,170,0.65)" font-size="8">deploy</text></g>
-      <text x="600" y="520" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-size="16" font-weight="700" letter-spacing="1">FleetPulse — Production Architecture</text>
+      <text x="600" y="520" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-size="16" font-weight="700" letter-spacing="1">FleetPulse - Production Architecture</text>
       <text x="600" y="542" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="11">CAN Bus → Edge → AWS Serverless → React Dashboard</text>
       <rect x="350" y="475" width="12" height="12" rx="2" fill="#3b82f6"/><text x="368" y="486" fill="rgba(255,255,255,0.65)" font-size="11">Vehicle Edge</text>
       <rect x="460" y="475" width="12" height="12" rx="2" fill="#f59e0b"/><text x="478" y="486" fill="rgba(255,255,255,0.65)" font-size="11">AWS Cloud</text>
@@ -1179,7 +1193,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
 <section id="fp-usecases">
   <div class="fp-section-label">Use Cases</div>
   <h2>Built for Every Fleet Type</h2>
-  <p class="fp-section-sub">From private logistics to public transit — FleetPulse adapts to your operational reality.</p>
+  <p class="fp-section-sub">From private logistics to public transit - FleetPulse adapts to your operational reality.</p>
 
   <div class="fp-tabs-nav">
     <button class="fp-tab-btn active" data-tab="fleet">Fleet Operators</button>
@@ -1192,7 +1206,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
     <div class="fp-uc-grid">
       <div class="fp-uc-content">
         <h3>Fleet Operators</h3>
-        <p>Eliminate reactive maintenance. FleetPulse gives your ops team real-time visibility into battery SoC, motor temperatures, and drivetrain health — before vehicles go offline.</p>
+        <p>Eliminate reactive maintenance. FleetPulse gives your ops team real-time visibility into battery SoC, motor temperatures, and drivetrain health - before vehicles go offline.</p>
         <div class="fp-uc-metrics">
           <div class="fp-uc-metric">
             <div class="fp-uc-metric-val">40%</div>
@@ -1215,7 +1229,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
           <li>Real-time battery state of charge and health per vehicle</li>
           <li>Motor controller thermal monitoring with alert thresholds</li>
           <li>Historical trend analysis for predictive maintenance scheduling</li>
-          <li>Multi-vehicle dashboard — your whole fleet in one view</li>
+          <li>Multi-vehicle dashboard - your whole fleet in one view</li>
           <li>CAN signal export for your maintenance software</li>
         </ul>
         <a href="#fp-cta" class="fp-uc-cta">Start a Pilot</a>
@@ -1255,7 +1269,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
           </div>
         </div>
         <ul class="fp-uc-features">
-          <li>Multi-OEM DBC library — one platform for all vehicle types</li>
+          <li>Multi-OEM DBC library - one platform for all vehicle types</li>
           <li>FTA grant compliance reports generated automatically</li>
           <li>Immutable audit trail via S3 versioning</li>
           <li>Per-route energy consumption analysis</li>
@@ -1298,7 +1312,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
           </div>
         </div>
         <ul class="fp-uc-features">
-          <li>Battery SoH trending — detect degradation early, before returns</li>
+          <li>Battery SoH trending - detect degradation early, before returns</li>
           <li>Rapid acceleration and regen abuse pattern detection</li>
           <li>Per-rental session CAN snapshots for dispute resolution</li>
           <li>Lease-end condition reports backed by raw vehicle data</li>
@@ -1451,19 +1465,19 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
     <div class="fp-spec-row fp-animate">
       <div class="fp-spec-label">Edge Hardware</div>
       <div class="fp-spec-value">
-        <span class="fp-spec-tag">LILYGO T-SIM7600G-H 16MB ESP32-WROVER</span>
-        <span class="fp-spec-tag">CAN HAT (MCP2515)</span>
-        <span class="fp-spec-tag">OBD-II adapter</span>
+        <span class="fp-spec-tag">LILYGO T-SIM7600G-H ESP32</span>
+        <span class="fp-spec-tag">4G LTE (SIM7600G-H)</span>
+        <span class="fp-spec-tag">GPS (built-in)</span>
+        <span class="fp-spec-tag">Solar charging support</span>
       </div>
     </div>
 
     <div class="fp-spec-row fp-animate">
       <div class="fp-spec-label">Edge Software</div>
       <div class="fp-spec-value">
-        <span class="fp-spec-tag">Python 3.12+</span>
-        <span class="fp-spec-tag">python-can</span>
-        <span class="fp-spec-tag">cantools</span>
-        <span class="fp-spec-tag">pyarrow</span>
+        <span class="fp-spec-tag">C++ / Arduino framework</span>
+        <span class="fp-spec-tag">ESP32 CAN driver</span>
+        <span class="fp-spec-tag">4G LTE MQTT / HTTP</span>
       </div>
     </div>
 
@@ -1727,7 +1741,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
 <section id="fp-pricing">
   <div class="fp-section-label">Pricing</div>
   <h2>Transparent, Ownership-First Pricing</h2>
-  <p class="fp-section-sub">No per-vehicle-per-month surprises. Deploy in your AWS account — costs scale with your cloud bill, not ours.</p>
+  <p class="fp-section-sub">No per-vehicle-per-month surprises. Deploy in your AWS account - costs scale with your cloud bill, not ours.</p>
 
   <div class="fp-pricing-grid">
 
@@ -1925,7 +1939,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
   <div class="fp-cta-inner">
     <div class="fp-cta-eyebrow">Get Started</div>
     <h2>Ready to See <span>FleetPulse</span> in Action?</h2>
-    <p>Book a 30-minute demo. We'll show you live data from a real vehicle — battery state of charge, motor thermals, drivetrain signals — streamed from CAN bus to dashboard.</p>
+    <p>Book a 30-minute demo. We'll show you live data from a real vehicle - battery state of charge, motor thermals, drivetrain signals - streamed from CAN bus to dashboard.</p>
     <div class="fp-cta-btns">
       <a href="https://revelectrik.com/#contactus" class="fp-cta-btn-primary">Book a Demo</a>
       <a href="https://github.com/subhasisrevelectrik/telemetry-platform" target="_blank" rel="noopener" class="fp-cta-btn-secondary">View Source on GitHub →</a>
