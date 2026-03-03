@@ -199,7 +199,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
     <h1>Real-Time <span>CAN Bus Telemetry</span><br>for Commercial EV Fleets</h1>
     <p class="fp-sub">From vehicle to cloud dashboard in under an hour. Monitor battery health, motor performance, and drivetrain diagnostics across your entire fleet.</p>
     <div class="fp-hero-btns">
-      <a href="#fp-cta" class="fp-btn-primary">Book a Demo</a>
+      <a href="#" class="fp-btn-primary" data-modal="book-demo">Book a Demo</a>
       <a href="https://github.com/subhasisrevelectrik/telemetry-platform" target="_blank" rel="noopener" class="fp-btn-ghost">View on GitHub →</a>
     </div>
     <div class="fp-hero-stats">
@@ -1237,7 +1237,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
           <li>Multi-vehicle dashboard - your whole fleet in one view</li>
           <li>CAN signal export for your maintenance software</li>
         </ul>
-        <a href="#fp-cta" class="fp-uc-cta">Start a Pilot</a>
+        <a href="#" class="fp-uc-cta" data-modal="pilot">Start a Pilot</a>
       </div>
       <div>
         <div class="fp-device-img-wrap">
@@ -1279,7 +1279,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
           <li>Per-route energy consumption analysis</li>
           <li>Driver behavior correlation with battery degradation</li>
         </ul>
-        <a href="#fp-cta" class="fp-uc-cta">Request Municipal Demo</a>
+        <a href="#" class="fp-uc-cta" data-modal="municipal">Request Municipal Demo</a>
       </div>
       <div>
         <div class="fp-device-img-wrap">
@@ -1321,7 +1321,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
           <li>Lease-end condition reports backed by raw vehicle data</li>
           <li>Integration-ready API for your fleet management software</li>
         </ul>
-        <a href="#fp-cta" class="fp-uc-cta">See a Live Demo</a>
+        <a href="#" class="fp-uc-cta" data-modal="live-demo">See a Live Demo</a>
       </div>
       <div>
         <div class="fp-device-img-wrap">
@@ -1763,7 +1763,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
         <li class="fp-dimmed">AI chatbot diagnostics</li>
         <li class="fp-dimmed">On-prem option</li>
       </ul>
-      <a href="#fp-cta" class="fp-plan-cta">Contact Us</a>
+      <a href="#" class="fp-plan-cta" data-modal="contact">Contact Us</a>
     </div>
 
     <!-- Growth (Most Popular) -->
@@ -1783,7 +1783,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
         <li class="fp-dimmed">On-prem option</li>
         <li class="fp-dimmed">Dedicated account manager</li>
       </ul>
-      <a href="#fp-cta" class="fp-plan-cta">Contact Us</a>
+      <a href="#" class="fp-plan-cta" data-modal="contact">Contact Us</a>
     </div>
 
     <!-- Enterprise -->
@@ -1802,7 +1802,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
         <li>Dedicated account manager</li>
         <li>AI diagnostics + compliance reports</li>
       </ul>
-      <a href="#fp-cta" class="fp-plan-cta">Contact Us</a>
+      <a href="#" class="fp-plan-cta" data-modal="contact">Contact Us</a>
     </div>
 
   </div>
@@ -1943,7 +1943,7 @@ href="#rec725085337"> <span class="t-btnflex__text">CONTACT US</span> <style>#re
     <h2>Ready to See <span>FleetPulse</span> in Action?</h2>
     <p>Book a 30-minute demo. We'll show you live data from a real vehicle - battery state of charge, motor thermals, drivetrain signals - streamed from CAN bus to dashboard.</p>
     <div class="fp-cta-btns">
-      <a href="https://revelectrik.com/#contactus" class="fp-cta-btn-primary">Book a Demo</a>
+      <a href="#" class="fp-cta-btn-primary" data-modal="book-demo">Book a Demo</a>
       <a href="https://github.com/subhasisrevelectrik/telemetry-platform" target="_blank" rel="noopener" class="fp-cta-btn-secondary">View Source on GitHub →</a>
     </div>
     <div class="fp-cta-note">No commitment. We'll bring the vehicle data.</div>
@@ -1958,6 +1958,573 @@ imgfield="img"
 alt=""> </a> </div> <div class="t463__col t463__col_center t-align_center"> <div class="t463__typo t463__copyright t-name t-name_xs" field="text"><div style="font-size: 26px;" data-customstyle="yes"><strong style="color: rgb(255, 255, 255);">Phone: +1 (408)477-9526</strong><br /><strong style="color: rgb(255, 255, 255);">Email: <a href="mailto:contact@revelectrik.com" style="color: rgb(255, 255, 255);">contact@revelectrik.com</a></strong><br /><strong style="color: rgb(255, 255, 255);">© 2023 Revelectrik LLC. All rights reserved.</strong></div></div> </div> <div class="t463__col t-align_right"> </div> </div> </div> </div> </div> <style> #rec760068180 .t463__link{font-size:20px;color:#ffffff;font-weight:600;}#rec760068180 .t463__logo{font-size:20px;color:#ffffff;font-weight:600;}#rec760068180 .t463__copyright{color:#ffffff;}</style> </div> </footer> <!--/footer-->
 
 </div>
+<!-- FleetPulse Modal Forms -->
+<style>
+@keyframes fpFadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fpSlideUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+
+.fp-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: fpFadeIn 0.2s ease;
+}
+.fp-modal-overlay.fp-modal-open {
+  display: flex;
+}
+.fp-modal-card {
+  background: #111827;
+  border: 1px solid rgba(0,212,170,0.25);
+  border-radius: 12px;
+  padding: 36px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: fpSlideUp 0.25s ease;
+  position: relative;
+}
+.fp-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.fp-modal-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+.fp-modal-close {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.5);
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 4px;
+  transition: color 0.15s;
+}
+.fp-modal-close:hover { color: #ffffff; }
+.fp-modal-form .fp-mf-row {
+  margin-bottom: 16px;
+}
+.fp-modal-form label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 6px;
+}
+.fp-modal-form label .fp-req { color: #00d4aa; }
+.fp-modal-form input,
+.fp-modal-form select,
+.fp-modal-form textarea {
+  width: 100%;
+  background: #0a0f1a;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 14px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+.fp-modal-form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2300d4aa' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 36px;
+}
+.fp-modal-form select option { background: #111827; }
+.fp-modal-form input:focus,
+.fp-modal-form select:focus,
+.fp-modal-form textarea:focus {
+  border-color: #00d4aa;
+}
+.fp-modal-form input.fp-field-error,
+.fp-modal-form select.fp-field-error,
+.fp-modal-form textarea.fp-field-error {
+  border-color: #e5194a;
+}
+.fp-modal-form .fp-inline-error {
+  font-size: 12px;
+  color: #e5194a;
+  margin-top: 4px;
+  display: none;
+}
+.fp-modal-form .fp-inline-error.fp-show { display: block; }
+.fp-modal-form textarea { resize: vertical; min-height: 90px; }
+.fp-modal-submit {
+  width: 100%;
+  padding: 12px;
+  background: #00d4aa;
+  color: #0a0f1a;
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+  margin-top: 8px;
+  font-family: inherit;
+}
+.fp-modal-submit:hover:not(:disabled) { background: #00eaff; }
+.fp-modal-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+.fp-modal-success {
+  display: none;
+  text-align: center;
+  padding: 16px 0;
+}
+.fp-modal-success.fp-show { display: block; }
+.fp-modal-success-icon {
+  font-size: 48px;
+  color: #00d4aa;
+  margin-bottom: 16px;
+}
+.fp-modal-success h3 {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+.fp-modal-success p {
+  color: rgba(255,255,255,0.65);
+  font-size: 14px;
+  margin: 0;
+}
+.fp-modal-error {
+  display: none;
+  background: rgba(229,25,74,0.1);
+  border: 1px solid rgba(229,25,74,0.4);
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-top: 12px;
+  font-size: 13px;
+  color: #ff6b8a;
+}
+.fp-modal-error.fp-show { display: block; }
+.fp-modal-error a { color: #00d4aa; }
+</style>
+
+<!-- Modal A: Book a Demo -->
+<div id="fp-modal-book-demo" class="fp-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="fp-modal-book-demo-title">
+  <div class="fp-modal-card">
+    <div class="fp-modal-header">
+      <h2 class="fp-modal-title" id="fp-modal-book-demo-title">Book a Demo</h2>
+      <button class="fp-modal-close" data-close-modal="fp-modal-book-demo" aria-label="Close">&times;</button>
+    </div>
+    <div class="fp-modal-success">
+      <div class="fp-modal-success-icon">&#10003;</div>
+      <h3>Request Received!</h3>
+      <p>We'll be in touch within 1 business day.</p>
+    </div>
+    <form class="fp-modal-form" data-form-type="book_demo" novalidate>
+      <div class="fp-mf-row">
+        <label>Name <span class="fp-req">*</span></label>
+        <input type="text" name="name" placeholder="Your full name" autocomplete="name">
+        <div class="fp-inline-error">Please enter your name.</div>
+      </div>
+      <div class="fp-mf-row">
+        <label>Work Email <span class="fp-req">*</span></label>
+        <input type="email" name="email" placeholder="you@company.com" autocomplete="email">
+        <div class="fp-inline-error">Please enter a valid email address.</div>
+      </div>
+      <div class="fp-mf-row">
+        <label>Company <span class="fp-req">*</span></label>
+        <input type="text" name="company" placeholder="Company name" autocomplete="organization">
+        <div class="fp-inline-error">Please enter your company name.</div>
+      </div>
+      <div class="fp-mf-row">
+        <label>Phone</label>
+        <input type="tel" name="phone" placeholder="+1 (555) 000-0000" autocomplete="tel">
+      </div>
+      <div class="fp-mf-row">
+        <label>Fleet Size</label>
+        <select name="fleet_size">
+          <option value="">Select fleet size</option>
+          <option value="1-5">1 – 5 vehicles</option>
+          <option value="6-15">6 – 15 vehicles</option>
+          <option value="16-50">16 – 50 vehicles</option>
+          <option value="51-100">51 – 100 vehicles</option>
+          <option value="100+">100+ vehicles</option>
+        </select>
+      </div>
+      <div class="fp-mf-row">
+        <label>Message</label>
+        <textarea name="message" placeholder="Anything you'd like us to know before the call?"></textarea>
+      </div>
+      <div class="fp-modal-error">Something went wrong. Please email <a href="mailto:contact@revelectrik.com">contact@revelectrik.com</a> directly.</div>
+      <button type="submit" class="fp-modal-submit">Book My Demo</button>
+    </form>
+  </div>
+</div>
+
+<!-- Modal B: Start a Pilot -->
+<div id="fp-modal-pilot" class="fp-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="fp-modal-pilot-title">
+  <div class="fp-modal-card">
+    <div class="fp-modal-header">
+      <h2 class="fp-modal-title" id="fp-modal-pilot-title">Start a Pilot</h2>
+      <button class="fp-modal-close" data-close-modal="fp-modal-pilot" aria-label="Close">&times;</button>
+    </div>
+    <div class="fp-modal-success">
+      <div class="fp-modal-success-icon">&#10003;</div>
+      <h3>Pilot Request Received!</h3>
+      <p>We'll be in touch within 1 business day.</p>
+    </div>
+    <form class="fp-modal-form" data-form-type="pilot" novalidate>
+      <div class="fp-mf-row">
+        <label>Name <span class="fp-req">*</span></label>
+        <input type="text" name="name" placeholder="Your full name" autocomplete="name">
+        <div class="fp-inline-error">Please enter your name.</div>
+      </div>
+      <div class="fp-mf-row">
+        <label>Work Email <span class="fp-req">*</span></label>
+        <input type="email" name="email" placeholder="you@company.com" autocomplete="email">
+        <div class="fp-inline-error">Please enter a valid email address.</div>
+      </div>
+      <div class="fp-mf-row">
+        <label>Company <span class="fp-req">*</span></label>
+        <input type="text" name="company" placeholder="Company name" autocomplete="organization">
+        <div class="fp-inline-error">Please enter your company name.</div>
+      </div>
+      <div class="fp-mf-row">
+        <label>Phone</label>
+        <input type="tel" name="phone" placeholder="+1 (555) 000-0000" autocomplete="tel">
+      </div>
+      <div class="fp-mf-row">
+        <label>Fleet Size <span class="fp-req">*</span></label>
+        <select name="fleet_size">
+          <option value="">Select fleet size</option>
+          <option value="1-5">1 – 5 vehicles</option>
+          <option value="6-15">6 – 15 vehicles</option>
+          <option value="16-50">16 – 50 vehicles</option>
+          <option value="51-100">51 – 100 vehicles</option>
+          <option value="100+">100+ vehicles</option>
+        </select>
+        <div class="fp-inline-error">Please select your fleet size.</div>
+      </div>
+      <div class="fp-mf-row">
+        <label>Vehicle Types</label>
+        <input type="text" name="vehicle_types" placeholder="e.g. Class 6 trucks, transit buses">
+      </div>
+      <div class="fp-mf-row">
+        <label>Message</label>
+        <textarea name="message" placeholder="Tell us about your current fleet setup and goals."></textarea>
+      </div>
+      <div class="fp-modal-error">Something went wrong. Please email <a href="mailto:contact@revelectrik.com">contact@revelectrik.com</a> directly.</div>
+      <button type="submit" class="fp-modal-submit">Start My Pilot</button>
+    </form>
+  </div>
+</div>
+
+<!-- Modal C: Municipal Demo -->
+<div id="fp-modal-municipal" class="fp-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="fp-modal-municipal-title">
+  <div class="fp-modal-card">
+    <div class="fp-modal-header">
+      <h2 class="fp-modal-title" id="fp-modal-municipal-title">Request Municipal Demo</h2>
+      <button class="fp-modal-close" data-close-modal="fp-modal-municipal" aria-label="Close">&times;</button>
+    </div>
+    <div class="fp-modal-success">
+      <div class="fp-modal-success-icon">&#10003;</div>
+      <h3>Demo Request Received!</h3>
+      <p>We'll be in touch within 1 business day.</p>
+    </div>
+    <form class="fp-modal-form" data-form-type="municipal_demo" novalidate>
+      <div class="fp-mf-row">
+        <label>Name <span class="fp-req">*</span></label>
+        <input type="text" name="name" placeholder="Your full name" autocomplete="name">
+        <div class="fp-inline-error">Please enter your name.</div>
+      </div>
+      <div class="fp-mf-row">
+        <label>Work Email <span class="fp-req">*</span></label>
+        <input type="email" name="email" placeholder="you@agency.gov" autocomplete="email">
+        <div class="fp-inline-error">Please enter a valid email address.</div>
+      </div>
+      <div class="fp-mf-row">
+        <label>Agency / Organization <span class="fp-req">*</span></label>
+        <input type="text" name="company" placeholder="e.g. City of San Jose Transit">
+        <div class="fp-inline-error">Please enter your agency name.</div>
+      </div>
+      <div class="fp-mf-row">
+        <label>Phone</label>
+        <input type="tel" name="phone" placeholder="+1 (555) 000-0000" autocomplete="tel">
+      </div>
+      <div class="fp-mf-row">
+        <label>Fleet Size</label>
+        <select name="fleet_size">
+          <option value="">Select fleet size</option>
+          <option value="1-5">1 – 5 vehicles</option>
+          <option value="6-15">6 – 15 vehicles</option>
+          <option value="16-50">16 – 50 vehicles</option>
+          <option value="51-100">51 – 100 vehicles</option>
+          <option value="100+">100+ vehicles</option>
+        </select>
+      </div>
+      <div class="fp-mf-row">
+        <label>Vehicle Types</label>
+        <input type="text" name="vehicle_types" placeholder="e.g. Transit buses, utility vehicles">
+      </div>
+      <div class="fp-mf-row">
+        <label>Message</label>
+        <textarea name="message" placeholder="Tell us about your transit network and compliance requirements."></textarea>
+      </div>
+      <div class="fp-modal-error">Something went wrong. Please email <a href="mailto:contact@revelectrik.com">contact@revelectrik.com</a> directly.</div>
+      <button type="submit" class="fp-modal-submit">Request Municipal Demo</button>
+    </form>
+  </div>
+</div>
+
+<!-- Modal D: Live Demo -->
+<div id="fp-modal-live-demo" class="fp-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="fp-modal-live-demo-title">
+  <div class="fp-modal-card">
+    <div class="fp-modal-header">
+      <h2 class="fp-modal-title" id="fp-modal-live-demo-title">See a Live Demo</h2>
+      <button class="fp-modal-close" data-close-modal="fp-modal-live-demo" aria-label="Close">&times;</button>
+    </div>
+    <div class="fp-modal-success">
+      <div class="fp-modal-success-icon">&#10003;</div>
+      <h3>Demo Request Received!</h3>
+      <p>We'll be in touch within 1 business day.</p>
+    </div>
+    <form class="fp-modal-form" data-form-type="live_demo" novalidate>
+      <div class="fp-mf-row">
+        <label>Name <span class="fp-req">*</span></label>
+        <input type="text" name="name" placeholder="Your full name" autocomplete="name">
+        <div class="fp-inline-error">Please enter your name.</div>
+      </div>
+      <div class="fp-mf-row">
+        <label>Work Email <span class="fp-req">*</span></label>
+        <input type="email" name="email" placeholder="you@company.com" autocomplete="email">
+        <div class="fp-inline-error">Please enter a valid email address.</div>
+      </div>
+      <div class="fp-mf-row">
+        <label>Company <span class="fp-req">*</span></label>
+        <input type="text" name="company" placeholder="Company name" autocomplete="organization">
+        <div class="fp-inline-error">Please enter your company name.</div>
+      </div>
+      <div class="fp-mf-row">
+        <label>Phone</label>
+        <input type="tel" name="phone" placeholder="+1 (555) 000-0000" autocomplete="tel">
+      </div>
+      <div class="fp-mf-row">
+        <label>Fleet Size</label>
+        <select name="fleet_size">
+          <option value="">Select fleet size</option>
+          <option value="1-5">1 – 5 vehicles</option>
+          <option value="6-15">6 – 15 vehicles</option>
+          <option value="16-50">16 – 50 vehicles</option>
+          <option value="51-100">51 – 100 vehicles</option>
+          <option value="100+">100+ vehicles</option>
+        </select>
+      </div>
+      <div class="fp-mf-row">
+        <label>Message</label>
+        <textarea name="message" placeholder="Any specific use cases or questions for the demo?"></textarea>
+      </div>
+      <div class="fp-modal-error">Something went wrong. Please email <a href="mailto:contact@revelectrik.com">contact@revelectrik.com</a> directly.</div>
+      <button type="submit" class="fp-modal-submit">Request Live Demo</button>
+    </form>
+  </div>
+</div>
+
+<!-- Modal E: Contact Us -->
+<div id="fp-modal-contact" class="fp-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="fp-modal-contact-title">
+  <div class="fp-modal-card">
+    <div class="fp-modal-header">
+      <h2 class="fp-modal-title" id="fp-modal-contact-title">Contact Us</h2>
+      <button class="fp-modal-close" data-close-modal="fp-modal-contact" aria-label="Close">&times;</button>
+    </div>
+    <div class="fp-modal-success">
+      <div class="fp-modal-success-icon">&#10003;</div>
+      <h3>Message Sent!</h3>
+      <p>We'll be in touch within 1 business day.</p>
+    </div>
+    <form class="fp-modal-form" data-form-type="contact" novalidate>
+      <div class="fp-mf-row">
+        <label>Name <span class="fp-req">*</span></label>
+        <input type="text" name="name" placeholder="Your full name" autocomplete="name">
+        <div class="fp-inline-error">Please enter your name.</div>
+      </div>
+      <div class="fp-mf-row">
+        <label>Email <span class="fp-req">*</span></label>
+        <input type="email" name="email" placeholder="you@company.com" autocomplete="email">
+        <div class="fp-inline-error">Please enter a valid email address.</div>
+      </div>
+      <div class="fp-mf-row">
+        <label>Company</label>
+        <input type="text" name="company" placeholder="Company name (optional)" autocomplete="organization">
+      </div>
+      <div class="fp-mf-row">
+        <label>Phone</label>
+        <input type="tel" name="phone" placeholder="+1 (555) 000-0000" autocomplete="tel">
+      </div>
+      <div class="fp-mf-row">
+        <label>Message</label>
+        <textarea name="message" placeholder="How can we help?"></textarea>
+      </div>
+      <div class="fp-modal-error">Something went wrong. Please email <a href="mailto:contact@revelectrik.com">contact@revelectrik.com</a> directly.</div>
+      <button type="submit" class="fp-modal-submit">Send Message</button>
+    </form>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  function openModal(id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    el.classList.add('fp-modal-open');
+    document.body.style.overflow = 'hidden';
+    var first = el.querySelector('input, select, textarea, button');
+    if (first) setTimeout(function () { first.focus(); }, 50);
+  }
+
+  function closeModal(id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    el.classList.remove('fp-modal-open');
+    document.body.style.overflow = '';
+  }
+
+  // Wire open buttons
+  var MODAL_MAP = {
+    'book-demo': 'fp-modal-book-demo',
+    'pilot':     'fp-modal-pilot',
+    'municipal': 'fp-modal-municipal',
+    'live-demo': 'fp-modal-live-demo',
+    'contact':   'fp-modal-contact',
+  };
+
+  document.querySelectorAll('[data-modal]').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      var key = btn.getAttribute('data-modal');
+      if (MODAL_MAP[key]) openModal(MODAL_MAP[key]);
+    });
+  });
+
+  // Wire close buttons
+  document.querySelectorAll('[data-close-modal]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      closeModal(btn.getAttribute('data-close-modal'));
+    });
+  });
+
+  // Close on overlay click (not card)
+  document.querySelectorAll('.fp-modal-overlay').forEach(function (overlay) {
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) closeModal(overlay.id);
+    });
+  });
+
+  // Close on Escape
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.fp-modal-overlay.fp-modal-open').forEach(function (el) {
+        closeModal(el.id);
+      });
+    }
+  });
+
+  // Form submission
+  function validateField(input, errorEl) {
+    var val = input.value.trim();
+    var isSelect = input.tagName === 'SELECT';
+    var required = input.closest('.fp-mf-row').querySelector('label .fp-req') !== null;
+
+    if (required && !val) {
+      input.classList.add('fp-field-error');
+      if (errorEl) errorEl.classList.add('fp-show');
+      return false;
+    }
+    if (input.type === 'email' && val && !EMAIL_RE.test(val)) {
+      input.classList.add('fp-field-error');
+      if (errorEl) errorEl.classList.add('fp-show');
+      return false;
+    }
+    input.classList.remove('fp-field-error');
+    if (errorEl) errorEl.classList.remove('fp-show');
+    return true;
+  }
+
+  document.querySelectorAll('.fp-modal-form').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // Validate all fields
+      var valid = true;
+      form.querySelectorAll('input, select, textarea').forEach(function (field) {
+        var row = field.closest('.fp-mf-row');
+        if (!row) return;
+        var errEl = row.querySelector('.fp-inline-error');
+        if (!validateField(field, errEl)) valid = false;
+      });
+      if (!valid) return;
+
+      var submitBtn = form.querySelector('.fp-modal-submit');
+      var errorBox  = form.querySelector('.fp-modal-error');
+      var successEl = form.closest('.fp-modal-card').querySelector('.fp-modal-success');
+
+      // Show loading
+      var originalText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending\u2026';
+      errorBox.classList.remove('fp-show');
+
+      // Collect data
+      var data = { form_type: form.getAttribute('data-form-type') };
+      form.querySelectorAll('input, select, textarea').forEach(function (f) {
+        if (f.name) data[f.name] = f.value.trim();
+      });
+
+      fetch('/api/submit-form', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      })
+        .then(function (res) { return res.json(); })
+        .then(function (json) {
+          if (json.success) {
+            form.style.display = 'none';
+            if (successEl) successEl.classList.add('fp-show');
+          } else {
+            throw new Error(json.error || 'Unknown error');
+          }
+        })
+        .catch(function () {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText;
+          errorBox.classList.add('fp-show');
+        });
+    });
+
+    // Clear field errors on input
+    form.querySelectorAll('input, select, textarea').forEach(function (field) {
+      field.addEventListener('input', function () {
+        var row = field.closest('.fp-mf-row');
+        if (!row) return;
+        var errEl = row.querySelector('.fp-inline-error');
+        field.classList.remove('fp-field-error');
+        if (errEl) errEl.classList.remove('fp-show');
+      });
+    });
+  });
+})();
+</script>
+
 <!-- Stat --> <script type="text/javascript">if(!window.mainTracker) {window.mainTracker='tilda';}
 window.tildastatcookie='no';setTimeout(function(){(function(d,w,k,o,g) {var n=d.getElementsByTagName(o)[0],s=d.createElement(o),f=function(){n.parentNode.insertBefore(s,n);};s.type="text/javascript";s.async=true;s.key=k;s.id="tildastatscript";s.src=g;if(w.opera=="[object Opera]") {d.addEventListener("DOMContentLoaded",f,false);} else {f();}})(document,window,'d40a7aa7a8d35c07761b911a1353c374','script','tilda-stat-1.0.min.js');},2000);</script> </body>
 </body>

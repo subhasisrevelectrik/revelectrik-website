@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"https://api.tildacdn.info/v1/getprojectslist/?publickey=u3aldnxs9rp2oi1iw5z9&secretkey=2000ffe794ac9d608f6f\")",
+      "Bash(tee tilda-export/api-responses/projects.json)"
+    ]
+  }
+}
